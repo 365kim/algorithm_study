@@ -7,15 +7,17 @@
 
 t_node	*list_get(t_node *begin_list, int n)
 {
-	int i;
+	int		i;
+	t_node	*curr;
 
 	i = 0;
+	curr = begin_list;
 	while (i < n)
 	{
-		if (begin_list == 0)
+		if (curr == 0)
 			return (0);
-		begin_list = begin_list->next;
+		curr = curr->next;
 		i++;
 	}
-	return (begin_list->data);
+	return (curr);
 }

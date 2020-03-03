@@ -8,27 +8,27 @@
 int		list_remove(t_node **begin_list, int n)
 {
 	int i;
-	t_node *tmp;
+	t_node *curr;
 
 	if (n < 0 || begin_list == 0 || *begin_list == 0)
 		return (0);
-	if (n == 0)
+	curr = *begin_list;
+	if (curr->next == 0 || n == 0)
 	{
-		tmp = *begin_list;
-		*begin_list = begin_list->next;
-		free(tmp);
-	}
-	while (i < n && (*begin_list)->next)
-	{
-		*begin_list = (*begin_list)->next;
-		i++;
-	}
-	if (i != n || begin_list == 0)
-		return (0);
-	else
-		tmp = *begin_list;
-		*begin_list = (*begin_list)->next;
-		tmp = 0;
+		*begin_list = curr->next;
+		free(curr);
 		return (1);
 	}
+	while (i < n - 1 && curr->next)
+	{
+		curr = curr->next;
+		i++;
+	}
+	if (i == n - 1 && curr->next != 0)
+	{
+		curr->next = (curr->next)->next;
+		free(curr->next);
+		return (1);
+	}
+	return (0);
 }

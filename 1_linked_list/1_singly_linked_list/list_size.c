@@ -2,12 +2,14 @@
 
 int	list_size(t_node *begin_list)
 {
-	int size;
+	int		size;
+	t_node	*curr;
 
 	size = 0;
-	while (begin_list)
+	curr = begin_list;
+	while (curr)
 	{
-		begin_list = begin_list->next;
+		curr = curr->next;
 		size++;
 	}
 	return (size);
