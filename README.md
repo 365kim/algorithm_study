@@ -1,4 +1,4 @@
-## Data Sturcture Study
+## Data Sturcture & Algorithm
 
 ### Mento : @nadarm(aka jko)
 
