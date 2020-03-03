@@ -4,14 +4,19 @@ int		main(void)
 {
 	t_node **begin_list = (t_node **)malloc(sizeof(t_node *));
 	printf("size = %d\n", list_size(*begin_list));
+
 	list_add1(begin_list, 0);
 	printf("size = %d\n", list_size(*begin_list));
+
 	list_add1(begin_list, 1);
 	printf("size = %d\n", list_size(*begin_list));
+
 	list_add1(begin_list, 2);
 	printf("size = %d\n", list_size(*begin_list));
+
 	list_add1(begin_list, 3);
 	printf("size = %d\n", list_size(*begin_list));
+
 	t_node *curr = *begin_list;
 	for (; curr; curr = curr->next)
 	{

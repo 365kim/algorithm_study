@@ -1,6 +1,6 @@
 ## Data Sturcture & Algorithm
 
-### Mento : [nadarm](github.com/nadarm/42-algorithm) (aka jko)
+### Mento : [nadarm](http://github.com/nadarm/42-algorithm) (aka jko)
 
 ### Contents
 1. linked_list	(20/03/02 ~ 03/08)

@@ -19,6 +19,7 @@ int		list_remove(t_node **begin_list, int n)
 		free(curr);
 		return (1);
 	}
+	i = 0;
 	while (i < n - 1 && curr->next)
 	{
 		curr = curr->next;
