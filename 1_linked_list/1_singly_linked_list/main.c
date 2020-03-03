@@ -1,4 +1,6 @@
-int main(void)
+#include "list.h"
+
+int		main(void)
 {
 	t_node **begin_list = (t_node **)malloc(sizeof(t_node *));
 	printf("size = %d\n", list_size(*begin_list));
@@ -39,7 +41,5 @@ int main(void)
 	{
 		printf("%d\n", curr->data);
 	}
-
-
 	return (0);
 }

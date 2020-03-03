@@ -2,16 +2,18 @@
 
 int	list_find(t_node *begin_list, int data)
 {
-	int i;
+	int		i;
+	t_node	*curr;
 
 	if (begin_list == 0)
 		return (-1);
 	i = 0;
-	while (begin_list)
+	curr = begin_list;
+	while (curr)
 	{
-		if (begin_list->data == data)
+		if (curr->data == data)
 			return (i);
-		begin_list = begin_list->next;
+		curr = curr->next;
 		i++;
 	}
 	return (-1);

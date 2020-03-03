@@ -22,7 +22,7 @@ int		list_add1(t_node **begin_list, int data)
 			current = current->next;
 			i++;
 		}
-		current->next = node;
+		current->next = new;
 	}
 	return (i);
 }
