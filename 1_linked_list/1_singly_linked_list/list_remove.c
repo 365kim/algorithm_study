@@ -12,6 +12,12 @@ int		list_remove(t_node **begin_list, int n)
 
 	if (n < 0 || begin_list == 0 || *begin_list == 0)
 		return (0);
+	if (n == 0)
+	{
+		tmp = *begin_list;
+		*begin_list = begin_list->next;
+		free(tmp);
+	}
 	while (i < n && (*begin_list)->next)
 	{
 		*begin_list = (*begin_list)->next;
