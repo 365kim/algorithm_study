@@ -4,6 +4,8 @@ int	list_find(t_node *begin_list, int data)
 {
 	int i;
 
+	if (begin_list == 0)
+		return (-1);
 	i = 0;
 	while (begin_list)
 	{
