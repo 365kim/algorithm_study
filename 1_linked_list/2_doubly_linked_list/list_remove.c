@@ -2,7 +2,7 @@
 
 int	list_remove(t_linked_list *list, int n)
 {
-	t_node	curr;
+	t_node	*curr;
 	int		i;
 
 	if (list == 0 || n < 0)

@@ -19,7 +19,7 @@ int		list_add(t_linked_list *list, int data, int n)
 	{
 		new->next = list->head;
 		(new->next)->prev = new;
-		*(list->head) = new;
+		list->head = new;
 	}
 	else
 	{

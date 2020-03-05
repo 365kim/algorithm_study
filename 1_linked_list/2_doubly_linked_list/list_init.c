@@ -12,7 +12,7 @@ t_linked_list	*list_init(void)
 	new = malloc(sizeof(t_linked_list));
 	if (new == 0)
 		return (0);
-	new.size = 0;
+	new->size = 0;
 	new->head = 0;
 	new->tail = 0;
 	return (new);

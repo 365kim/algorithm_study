@@ -1,8 +1,8 @@
 #include "list.h"
 
-t_node	*list_get(t_linked list *list, int n)
+t_node	*list_get(t_linked_list *list, int n)
 {
-	t_node	curr;
+	t_node	*curr;
 	int		i;
 
 	i = 0;
