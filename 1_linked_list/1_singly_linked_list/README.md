@@ -12,12 +12,13 @@
 - 인자로 주어지는 begin_list로 바로 리스트를 탐색하는게 아니라 curr를 새로 선언해서 begin_list를 담아주고 curr로 탐색하도록 한다. begin_list를 뒤에 있는 노드로 움직이게 되면 앞에 있는 노드에 접근이 불가능해지기 때문이다.
 - 관련예제 : [n번째탐색](./list_get.c), [값탐색](list_find.c), [노드수반환](./list_size.c)
 
-### 삽입연산
+### 삽입
 > 1. 리스트가 비어있는 경우
 > 2. 리스트가 비어있지 않은 경우 <br>
 >  2-1. head에 새 노드를 삽입할 경우<br>
 >  2-2. tail에 새 노드를 삽입할 경우<br>
 >  2-3. 그 외의 경우
+- curr = begin_list;라고 하면 curr은 첫번째 노드를 가리키고 있을 뿐, 이 후 curr의 값을 수정한다고 해서 begin_list가 바뀌는 것은 아니다. 예를 들어 curr = new;라고 하면 첫번째 노드를 가리키던 curr이 new 노드를 가리키게 되었을 뿐인 것이다. 따라서 head에 새로운 노드를 추가하려면 begin_list = new와 같이 begin_list에 직접 대입해 주어야 한다
 - 관련예제 : [tail에삽입](./list_add1.c), [n번째삽입](./list_add.c)
 
 ### 삭제연산
