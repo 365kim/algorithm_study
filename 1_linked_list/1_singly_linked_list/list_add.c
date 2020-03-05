@@ -11,9 +11,8 @@ int	list_add(t_node **begin_list, int data, int n)
 	i = 0;
 	if ((curr = *begin_list) == 0 || n == 0)
 	{
-		curr = *begin_list;
+		new->next = *begin_list;
 		*begin_list = new;
-		(*begin_list)->next = curr;
 	}
 	else
 	{

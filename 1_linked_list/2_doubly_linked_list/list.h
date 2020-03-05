@@ -13,6 +13,6 @@ typedef struct		s_node
 typedef struct		s_linked_list
 {
 	unsigned int	size;
-	t_node			**head;
-	t_node			**tail;
+	t_node			*head;
+	t_node			*tail;
 }					t_linked_list;
