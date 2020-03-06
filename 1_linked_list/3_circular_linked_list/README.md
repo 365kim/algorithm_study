@@ -1,6 +1,7 @@
 ## Circular Linked List
 - 원형 연결리스트
 - list 구조체에 head를 넣어준다 (원형이기 때문에 doubly linked list와 달리 tail을 따로 사용하지 않는다)
+- 참고자료
 
 ### 노드생성
 - 새로운 노드를 할당하고 초기화 시켜준다. 
