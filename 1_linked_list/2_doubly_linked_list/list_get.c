@@ -5,7 +5,7 @@ t_node	*list_get(t_linked_list *list, int n)
 	t_node	*curr;
 	int		i;
 
-	if (list == 0 || n < 0 || n >= list->size)
+	if (list == 0 || n < 0 || n >= (int)list->size)
 		return (0);
 	i = 0;
 	curr = list->head;

@@ -13,16 +13,16 @@ int		list_add(t_linked_list *list, int data, int n)
 
 	if (list == 0 || n < 0)
 		return (-1);
-	if (n >= list->size)
+	if (n >= (int)list->size)
 		return (list_add_last(list, data));
 	if ((curr = list_get(list, n)) == 0 || (new = create_elem(data)) == 0)
 		return (-1);
-	if (n == 0)
+	new->next = curr;
+	new->prev = curr->prev;
+	if (n == 0 || curr->prev == 0)
 		list->head = new;
 	else
 		(curr->prev)->next = new;
-	new->prev = curr->prev;
-	new->next = curr;
 	curr->prev = new;
 	list->size++;
 	return (n);
