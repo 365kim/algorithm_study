@@ -3,11 +3,9 @@
 void	list_clear(t_linked_list *list)
 {
 	int i;
-	int n;
 
 	i = 0;
-	n = list_size(list);
-	while (i < n)
+	while (i < list->size)
 	{
 		list_remove(list, 0);
 		i++;

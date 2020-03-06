@@ -3,29 +3,25 @@
 int	list_remove(t_linked_list *list, int n)
 {
 	t_node	*curr;
-	int		i;
 
-	if (list == 0 || n < 0)
+	if (list == 0 || n < 0 || n >= list->size || (curr = list_get(list, n)) == 0)
 		return (0);
-	i = 0;
-	curr = list->head;
-	if (curr->next == 0 || n == 0)
+	if (curr->prev == 0 || n == 0)
 	{
 		list->head = curr->next;
-		free(curr);
-		return (1);
+		(curr->next)->prev = 0;
 	}
-	while (i < n && curr)
+	else if (curr->next == 0 || n == list->size)
 	{
-		curr = curr->next;
-		i++;
+		list->tail = curr->prev;
+		(curr->prev)->next = 0;
 	}
-	if (i == n && curr != 0)
+	else
 	{
 		(curr->next)->prev = curr->prev;
 		(curr->prev)->next = curr->next;
-		free(curr);
-		return (1);
 	}
-	return (0);
+	list->size--;
+	free(curr);
+	return (1);
 }

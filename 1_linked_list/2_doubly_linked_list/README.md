@@ -21,7 +21,7 @@
 >  2-1. head에 새 노드를 삽입할 경우<br>
 >  2-2. tail에 새 노드를 삽입할 경우<br>
 >  2-3. 그 외의 경우
-- 전체 노드의 개수가 n인 경우 n - 1에 노드를 추가하는 경우나,  tail에 노드를 삽입한 후 다시 tail의 노드를 삽입해야 하는 경우 등에서는 singly linked list에 비해 doubly linked list일 경우 훨씬 빠르게 연산을 수행할 수 있다.
+- 전체 노드의 개수가 n인 경우 n - 1에 노드를 추가하는 경우나,  tail에 노드를 삽입한 후 다시 tail의 노드를 삽입해야 하는 경우 등에서는 singly linked list에 비해 doubly linked list일 경우 tail로 접근하여 훨씬 빠르게 연산을 수행할 수 있다.
 - 관련예제 : [n번째삽입](./list_add.c)
 
 ### 삭제연산
