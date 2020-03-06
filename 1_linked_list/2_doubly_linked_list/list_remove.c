@@ -9,12 +9,14 @@ int	list_remove(t_linked_list *list, int n)
 	if (curr->prev == 0 || n == 0)
 	{
 		list->head = curr->next;
-		(curr->next)->prev = 0;
+		if (curr->next)
+			(curr->next)->prev = 0;
 	}
-	else if (curr->next == 0 || n == list->size)
+	if (curr->next == 0 || n == list->size)
 	{
 		list->tail = curr->prev;
-		(curr->prev)->next = 0;
+		if (curr->prev)
+			(curr->prev)->next = 0;
 	}
 	else
 	{
