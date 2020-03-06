@@ -1,5 +1,6 @@
 ## Doubly Linked List
 - 이중 연결리스트
+- list 구조체에 head와 tail을 넣어준다
 - [참고자료1](https://blog.naver.com/beaqon/221240197476), [참고자료2](https://blog.naver.com/qorengus531/221462245653)
 
 ## 리스트생성/삭제
@@ -20,6 +21,7 @@
 >  2-1. head에 새 노드를 삽입할 경우<br>
 >  2-2. tail에 새 노드를 삽입할 경우<br>
 >  2-3. 그 외의 경우
+- 전체 노드의 개수가 n인 경우 n - 1에 노드를 추가하는 경우나,  tail에 노드를 삽입한 후 다시 tail의 노드를 삽입해야 하는 경우 등에서는 singly linked list에 비해 doubly linked list일 경우 훨씬 빠르게 연산을 수행할 수 있다.
 - 관련예제 : [n번째삽입](./list_add.c)
 
 ### 삭제연산
