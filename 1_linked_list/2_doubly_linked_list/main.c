@@ -5,11 +5,11 @@
 void print_list(t_linked_list *list)
 {
 	t_node *curr = list->head;
-	unsigned int i = 0;
-	printf("----------LIST-----------\n");
-	while (i < list->size)
+	printf("----------LIST SIZE : %d-----------\n", list->size);
+	int i = 0;
+	while (i < (int)list->size)
 	{
-		printf("index %d -> %d\n", i, curr->data);
+		printf("list[%d] -> %d\n", i, curr->data);
 		i++;
 		curr = curr->next;
 	}
@@ -19,11 +19,11 @@ void print_list(t_linked_list *list)
 void print_list_rev(t_linked_list *list)
 {
 	t_node *curr = list->tail;
-	unsigned int i = list->size - 1;
-	printf("----------LIST-----------\n");
+	printf("----------LIST SIZE : %d-----------\n", list->size);
+	int i = list->size - 1;
 	while (i >= 0)
 	{
-		printf("rev index %d -> %d\n", i, curr->data);
+		printf("list[%d] -> %d\n", i, curr->data);
 		i--;
 		curr = curr->prev;
 	}
@@ -41,7 +41,7 @@ int		main(void)
 	list_add(list, i++, 0);
 	print_list(list);
 
-	list_add(list, i++, 12421321);
+	list_add(list, i++, 1000000);
 	print_list(list);
 
 	list_add(list, i++, 3);
