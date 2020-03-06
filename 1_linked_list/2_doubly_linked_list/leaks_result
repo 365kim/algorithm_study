@@ -1,0 +1,22 @@
+Process:         a.out [13714]
+Path:            /Users/steve/mihykim/0_jko/1_linked_list/2_doubly_linked_list/a.out
+Load Address:    0x10e6b6000
+Identifier:      a.out
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [341]
+
+Date/Time:       2020-03-06 20:47:58.359 +0900
+Launch Time:     2020-03-06 20:47:58.289 +0900
+OS Version:      Mac OS X 10.13.6 (17G66)
+Report Version:  7
+Analysis Tool:   /usr/bin/leaks
+
+Physical footprint:         336K
+Physical footprint (peak):  336K
+----
+
+leaks Report Version: 3.0
+Process 13714: 160 nodes malloced for 17 KB
+Process 13714: 0 leaks for 0 total leaked bytes.
+

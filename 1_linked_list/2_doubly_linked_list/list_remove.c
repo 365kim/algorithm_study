@@ -18,7 +18,7 @@ int	list_remove(t_linked_list *list, int n)
 		if (curr->prev)
 			(curr->prev)->next = 0;
 	}
-	else
+	if (curr->next && curr->prev)
 	{
 		(curr->next)->prev = curr->prev;
 		(curr->prev)->next = curr->next;
@@ -27,3 +27,7 @@ int	list_remove(t_linked_list *list, int n)
 	free(curr);
 	return (1);
 }
+
+/*
+** line 21 : else    >>>   if (curr->next && curr->prev)
+*/

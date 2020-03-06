@@ -4,15 +4,19 @@
 ** Creates and returns a new element of t_node type
 */
 
-t_node *create_elem(int data)
+t_node	*create_elem(int data)
 {
-	t_node	*node;
+	t_node	*new;
 
-	node = malloc(sizeof(t_node *));
-	if (node == 0)
+	new = malloc(sizeof(t_node));
+	if (new == 0)
 		return (0);
-	node->data = data;
-	node->prev = 0;
-	node->next = 0;
-	return (node);
+	new->data = data;
+	new->prev = 0;
+	new->next = 0;
+	return (new);
 }
+
+/*
+** line 11 : sizeof(t_node *)   >>>   sizeof(t_node)
+*/
