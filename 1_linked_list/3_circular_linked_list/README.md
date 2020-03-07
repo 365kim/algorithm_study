@@ -1,11 +1,14 @@
 ## Circular Linked List
 - 원형 연결리스트
-- list 구조체에 head를 넣어준다 (원형이기 때문에 doubly linked list와 달리 tail을 따로 사용하지 않는다)
-- 참고자료
+- tail 노드가 NULL을 가리키지 않고 다시 head를 가리키는 형태
+- 모든 포인터가 다음 노드로 연결되어있기 때문에 cycle 구조의 자료의 구현에 유용하다
+- 원형이기 때문에 tail 없이 head 만 사용한다
+- singly circular, doubly circular 두 경우 모두 가능한데 여기서는 연습을 위해 prev까지 들어있는 노드를 기본 단위로 하여 doubly로 구현한다
+
+## fltmxm
 
 ### 노드생성
 - 새로운 노드를 할당하고 초기화 시켜준다. 
-- 배열에서는 'sizeof(char) * (len + 1)'과 같이 얼마만큼의 길이로 할당해 줄 것인지 신경써야 했지만<br> 리스트에서는 단일 노드를 생성할 것이기 때문에 'sizeof(t_node)'만큼만 할당해주었다.
 - 관련예제 : [노드생성](./create_elem.c)
 
 ### 탐색연산
