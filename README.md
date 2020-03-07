@@ -4,7 +4,7 @@
 ### Mentee : [365kim](https://github.com/365kim/study_with_jko), [robolovo](https://github.com/robolovo)
 
 ### Contents
-1. 'linked_list	(20/03/02 ~ 03/08)
+1. 'linked_list'	(20/03/02 ~ 03/08)
 1. 'stack'		(20/03/09 ~ 03/15)
 1. 'queue'		(20/03/16 ~ 03/22)
 1. 'deque'		(20/03/23 ~ 03/29)
