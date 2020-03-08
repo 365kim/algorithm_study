@@ -13,7 +13,7 @@ int		list_add(t_linked_list *list, void *data, int n)
 	if (list == 0 || n < 0)
 		return (-1);
 	n = n > list->size ? list->size : n;
-	if ((curr = list_get(list, n)) == 0) || (new = create_elem(data)) == 0)
+	if ((curr = list_get(list, n)) == 0 || (new = create_elem(data)) == 0)
 		return (-1);
 	left = curr->prev;
 	left->next = new;
