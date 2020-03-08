@@ -1,0 +1,92 @@
+Process:         a.out [30613]
+Path:            /Users/steve/mihykim/0_jko/1_linked_list/3_circular_linked_list/a.out
+Load Address:    0x10bfba000
+Identifier:      a.out
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [29087]
+
+Date/Time:       2020-03-08 20:08:40.629 +0900
+Launch Time:     2020-03-08 20:08:40.548 +0900
+OS Version:      Mac OS X 10.13.6 (17G66)
+Report Version:  7
+Analysis Tool:   /usr/bin/leaks
+
+Physical footprint:         348K
+Physical footprint (peak):  348K
+----
+
+leaks Report Version: 3.0
+Process 30613: 237 nodes malloced for 78 KB
+Process 30613: 70 leaks for 1120 total leaked bytes.
+
+Leak: 0x7fd14d404050  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404060  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4040b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4040c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404190  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4041a0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4041b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4041c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4041f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404220  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404230  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404240  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404250  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404260  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404270  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404280  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4042b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4042c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4042d0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4042e0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4042f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404300  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404310  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404320  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404330  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404340  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404350  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404360  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404390  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4043a0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4043b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4043c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4043f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404400  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404410  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404420  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404450  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404460  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404470  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404480  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4044b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4044c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4044d0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4044e0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4044f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404500  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404510  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404540  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404570  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4045a0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4045d0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4045e0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4045f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404600  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404630  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404660  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404670  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404680  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404690  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4046c0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4046f0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404720  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404750  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404780  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4047b0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4047e0  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404810  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404840  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d404870  size=16  zone: DefaultMallocZone_0x10bfc0000
+Leak: 0x7fd14d4048a0  size=16  zone: DefaultMallocZone_0x10bfc0000

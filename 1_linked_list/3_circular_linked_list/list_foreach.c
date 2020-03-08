@@ -9,7 +9,7 @@ void	list_foreach(t_linked_list *list, void (*f)(void *))
 		return ;
 	curr = list->head;
 	i = 0;
-	while (i < list->size)
+	while (i < (int)list->size)
 	{
 		f(curr->data);
 		i++;

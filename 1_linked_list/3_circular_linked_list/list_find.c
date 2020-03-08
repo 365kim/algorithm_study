@@ -14,7 +14,7 @@ int		list_find(t_linked_list *list, void *data, int (*cmp)(void *data1, void *da
 		return (-1);
 	i = 0;
 	curr = list->head;
-	while (i < list->size)
+	while (i < (int)list->size)
 	{
 		if (cmp(data, curr->data) == 0)
 			return (i);

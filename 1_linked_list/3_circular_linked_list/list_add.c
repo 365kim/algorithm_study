@@ -10,16 +10,30 @@ int		list_add(t_linked_list *list, void *data, int n)
 	t_node	*left;
 	t_node	*new;
 
-	if (list == 0 || n < 0)
+	if (list == 0 || (new = create_elem(data)) == 0)
 		return (-1);
-	n = n > list->size ? list->size : n;
-	if ((curr = list_get(list, n)) == 0 || (new = create_elem(data)) == 0)
-		return (-1);
-	left = curr->prev;
-	left->next = new;
-	curr->prev = new;
-	new->next = curr;
-	new->prev = left;
+	if (list->size == 0 || list->head == 0)
+	{
+		list->head = new;
+		list->size++;
+		return (0);
+	}
+	if (list->size == 1)
+	{
+		new->next = list->head;
+		new->prev = list->head;
+		(list->head)->prev = new;
+		(list->head)->next = new;
+	}
+	else
+	{
+		curr = list_get(list, n);
+		left = curr->prev;
+		left->next = new;
+		curr->prev = new;
+		new->next = curr;
+		new->prev = left;
+	}
 	if (n == 0)
 		list->head = new;
 	list->size++;
