@@ -1,22 +1,22 @@
-Process:         a.out [36269]
+Process:         a.out [38716]
 Path:            /Users/steve/mihykim/0_jko/1_linked_list/3_circular_linked_list/a.out
-Load Address:    0x107dd5000
+Load Address:    0x1061f8000
 Identifier:      a.out
 Version:         ???
 Code Type:       X86-64
-Parent Process:  zsh [34838]
+Parent Process:  zsh [36284]
 
-Date/Time:       2020-03-08 23:37:15.276 +0900
-Launch Time:     2020-03-08 23:37:15.189 +0900
+Date/Time:       2020-03-09 01:08:56.137 +0900
+Launch Time:     2020-03-09 01:08:56.053 +0900
 OS Version:      Mac OS X 10.13.6 (17G66)
 Report Version:  7
 Analysis Tool:   /usr/bin/leaks
 
-Physical footprint:         368K
-Physical footprint (peak):  368K
+Physical footprint:         388K
+Physical footprint (peak):  388K
 ----
 
 leaks Report Version: 3.0
-Process 36269: 160 nodes malloced for 77 KB
-Process 36269: 0 leaks for 0 total leaked bytes.
+Process 38716: 160 nodes malloced for 77 KB
+Process 38716: 0 leaks for 0 total leaked bytes.
 
