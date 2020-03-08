@@ -10,10 +10,9 @@ int		list_find(t_linked_list *list, void *data, int (*cmp)(void *data1, void *da
 	int		i;
 	t_node	*curr;
 
-	if (list == 0 || cmp == 0)
+	if (list == 0 || cmp == 0 || (curr = list->head) == 0)
 		return (-1);
 	i = 0;
-	curr = list->head;
 	while (i < (int)list->size)
 	{
 		if (cmp(data, curr->data) == 0)

@@ -15,6 +15,7 @@ void	list_remove(t_linked_list *list, int n, void (*free_data)(void *))
 	(curr->prev)->next = curr->next;
 	if (n == 0)
 		list->head = curr->next;
-	free_data(curr);
 	list->size--;
+	free_data(curr->data);
+	free(curr);
 }

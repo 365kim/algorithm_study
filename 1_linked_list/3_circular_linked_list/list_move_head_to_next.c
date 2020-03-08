@@ -2,8 +2,7 @@
 
 void	list_move_head_to_next(t_linked_list *list)
 {
-	t_node *curr;
-
-	curr = list->head;
-	list->head = curr->next;
+	if (list == 0 || list->head == 0)
+		return ;
+	list->head = (list->head)->next;
 }
