@@ -19,7 +19,6 @@ typedef struct		s_linked_list
 
 t_linked_list	*list_init(void);
 t_node			*create_elem(void *data);
-int			get_n(int size, int n);
 int			list_add(t_linked_list *list, void *data, int n);
 int			list_size(t_linked_list *list);
 void			list_move_head_to_next(t_linked_list *list);

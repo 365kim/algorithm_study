@@ -6,12 +6,14 @@
 
 int		get_n(int size, int n)
 {
+	if (n < 0)
+	{
+		while (n < 0)
+			n += size;
+	}
 	if (n > size - 1)
 		while (n > size - 1)
 			n -= size;
-	else if (n < 0)
-		while (n < 0) 
-			n += size;
 	return (n);
 }
 

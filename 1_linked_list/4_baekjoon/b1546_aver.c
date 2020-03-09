@@ -1,4 +1,19 @@
-#include "b1546_aver.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct		s_node
+{
+	int				score;
+	struct s_node	*next;
+}					t_node;
+
+typedef struct		s_answer
+{
+	int				index;
+	int				value;
+}					t_ans;
+
+
 
 /*
 **
