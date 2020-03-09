@@ -1,5 +1,3 @@
-## baekjoon
-
 ### [2562번 최댓값](https://www.acmicpc.net/problem/2562)
 - 풀이결과
 > 1회 : 런타임 에러 <br>
