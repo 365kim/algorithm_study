@@ -3,33 +3,35 @@
 
 typedef struct		s_node
 {
-	int				data;
+	int				score;
 	struct s_node	*next;
 }					t_node;
 
 /*
-** Print the max value and its index among the given 9 different natural numbers.
+** - Print the adjusted average of each score of the given number('n') of subjects.
+**   ( average' = average * 100 / max_score )
+** - Margin of error within 10^-2 is allowed
 */
 
-t_node			*create_elem(int data)
+t_node			*create_elem(int score)
 {
 	t_node *node;
 
 	node = malloc(sizeof(t_node));
 	if (node == 0)
 		return (0);
-	node->data = data;
+	node->score = score;
 	node->next = 0;
 	return (node);
 }
 
-int				list_add_last(t_node **head, int data)
+int				list_add_last(t_node **head, int score)
 {
 	int		i;
 	t_node	*curr;
 	t_node	*new;
 
-	if (head == 0 || (new = create_elem(data)) == 0)
+	if (head == 0 || (new = create_elem(score)) == 0)
 		return (-1);
 	if (*head == 0)
 	{
@@ -49,37 +51,46 @@ int				list_add_last(t_node **head, int data)
 
 int				main(void)
 {
+	int		n;
 	int		i;
-	int		value[9] = {0};
-	int		ans_index;
-	int		ans_value;
+	int		*value;
+	int		max;
+	int		sum;
 	t_node	**head;
 	t_node	*temp;
 	t_node	*curr;
 
 	head = malloc(sizeof(t_node *));
 	*head = 0;
+	n = 0;
+	scanf("%d", &n);
+	value = malloc(sizeof(int) * n);
 	i = 0;
-	while (i < 9)
+	while (i < n)
 	{
+		value[i] = 0;
 		scanf("%d", &value[i]);
 		list_add_last(head, value[i]);
 		i++;
 	}
 	curr = *head;
-	ans_value = (*head)->data;
-	ans_index = 1;
-	i = 1;
+	max = 0;
 	while (curr)
 	{
-		ans_index = curr->data > ans_value ? i : ans_index;
-		ans_value = curr->data > ans_value ? curr->data : ans_value;
+		max = curr->score > max ? curr->score : max;
+		curr = curr->next;
+	}
+	curr = *head;
+	sum = 0;
+	while (curr)
+	{
+		sum = sum + curr->score;
 		temp = curr;
 		curr = curr->next;
 		free(temp);
-		i++;
 	}
 	free(head);
-	printf("%d\n%d", ans_value, ans_index);
+	free(value);
+	printf("%.2f", sum * 100.0 / max / n);
 	return (0);
 }
