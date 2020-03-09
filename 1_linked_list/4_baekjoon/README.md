@@ -21,6 +21,5 @@
 ### [1546번 평균](https://www.acmicpc.net/problem/1546)
 - 풀이결과
 > 1회 :  성공
-- 이번에도 앞서 발생했던 것과 같은 메모리 할당, 해제, 초기화에서 비슷하게 문제가 있었지만 
-- valgrind로 에러를 잡고 제출해서 한번에 통과할 수 있었다.
-- 참고자료 : [valgrind 활용법](https://riptutorial.com/ko/cplusplus/example/9072/%EB%82%98%EC%9D%98-c-plusplus-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9D%80-segfault---valgrind%EB%A1%9C-%EB%81%9D%EB%82%A9%EB%8B%88%EB%8B%A4-)
+- 이번에도 앞서 발생했던 것과 같은 메모리 할당, 해제, 초기화에서 비슷하게 문제가 있었지만 valgrind로 에러를 잡고 제출해서 한번에 통과할 수 있었다.
+- 참고자료 : [valgrind 활용법2](https://riptutorial.com/ko/cplusplus/example/9072/%EB%82%98%EC%9D%98-c-plusplus-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9D%80-segfault---valgrind%EB%A1%9C-%EB%81%9D%EB%82%A9%EB%8B%88%EB%8B%A4-)
