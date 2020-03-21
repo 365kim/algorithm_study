@@ -5,11 +5,11 @@
 - `push` : 데이터 삽입연산, `pop` : 데이터 삭제연산
 - `top` : push와 pop이 이루어지는스택의 최상단 데이터 위치
 
-### [1] Stack using Array
+### :one: [Stack using Array](/1_stack_using_array)
 - 장점 : 구현이 쉽다.
 - 단점 : 스택의 크기에 정적인 제한을 두어야 하고, 인덱스가 범위 밖을 벗어나는 에러가 발생할 수 있다.
 
-### [2] Stack using Linked List
+### :two: [Stack using Linked List](/1_stack_using_linked_list)
 - 장점 : 스택의 크기에 제한이 없어 stack overflow를 어느정도 피할 수 있고, 삽입/삭제연산을 배열보다 유연하게 구현할 수 있다.
 - 단점 : 배열에 비해 구현이 어렵다.
 
