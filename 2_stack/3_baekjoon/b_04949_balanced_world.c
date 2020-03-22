@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/18 22:00:17 by mihykim           #+#    #+#             */
-/*   Updated: 2020/03/19 01:48:55 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/03/22 21:25:35 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,11 @@ int		main(void)
 			if (str[i] == '(' || str[i] == '[')
 				stack_push(stack, str[i]);
 			else if (str[i] == ')' || str[i] == ']')
+			{
 				c = stack_pop(stack, str[i]);
+				if (c == 'n')
+					break;
+			}	
 			i++;
 		}
 		if (stack->size > 0)
