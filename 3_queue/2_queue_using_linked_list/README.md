@@ -9,7 +9,7 @@
 
 ### 삽입연산
 - push 개수 제한이 없어 삽입 시 배열을 이용한 큐와 달리 last_index와 queue->size를 비교하지 않는다.
-- size가 0이었다면 rear가 아무것도 가리키고 있지 않았다면 rear도 head와 같이 새 노드를 가리키게 해준다
+- size가 0이었다면 rear도 head와 같이 새 노드를 가리키게 해준다
 - 관련예제 : [push](./queue_push.c)
 
 ### 참조연산
