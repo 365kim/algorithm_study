@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/29 11:52:36 by mihykim           #+#    #+#             */
-/*   Updated: 2020/03/29 14:48:13 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/03/30 16:06:11 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 ** - If there is any element behind with a higher priority than the front's, dequeue and enqueue the element.
 ** - The first number from stdin specifies how many testcases will be given.
 ** - Input will be like :
-** 						2			<= Two testcases will be given
-**						4 0			<= The first testcase (four in total, index 0)
-**						1 1 1 9
-**						2 1			<= The second testcase (two in total, index 1)
-**						9 8
+** 				2			<= Two testcases will be given
+**				4 0			<= The first testcase (four in total, index 0)
+**				1 1 1 9
+**				2 1			<= The second testcase (two in total, index 1)
+**				9 8
 */
 
 #include <stdio.h>
@@ -31,14 +31,13 @@
 # define M_PRINTED 0
 
 int queue[1000];
-int	idx_front;
+int idx_front;
 int idx_back;
-int	order;
+int order;
 int check;
 int i;
 int n;
 int m;
-
 
 void	enqueue(int n)
 {
@@ -50,20 +49,24 @@ int		dequeue(void)
 {
 	check = OK_TO_PRINT;
 	i = idx_front + 1;
-	while (i < idx_back && check)
+	while (i <= idx_back && check)
 	{
-		check = queue[idx_front] < queue[i] ? PRINT_NEXT_TIME : OK_TO_PRINT;
+		if (queue[idx_front] < queue[i])
+			check = PRINT_NEXT_TIME;
 		i++;
 	}
 	if (check == PRINT_NEXT_TIME)
 	{
 		enqueue(queue[idx_front]);
-		m = (m == idx_front) ? idx_back : m;
+		if (m == idx_front)
+			m = idx_back;
 	}
-	else if (m == idx_front)
-		return (M_PRINTED);
 	else
+	{
+		if (m == idx_front)
+			return (M_PRINTED);
 		order++;
+	}
 	idx_front++;
 	return (NOT_YET);
 }
