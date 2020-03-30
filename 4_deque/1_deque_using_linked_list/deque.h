@@ -6,12 +6,13 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/30 16:46:41 by mihykim           #+#    #+#             */
-/*   Updated: 2020/03/30 16:48:20 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/03/30 16:49:54 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEQUE_H
 # define DEQUE_H
+
 
 typedef struct		s_node
 {
@@ -26,5 +27,6 @@ typedef struct		s_deque
 	t_node			*front;
 	t_node			*back;
 }					t_deque;
+
 
 #endif
