@@ -16,7 +16,8 @@
 <br>
 
 ## [5430번](https://www.acmicpc.net/problem/5430) AC
-> 1회 : (시도전)
+> 1회 : 실패 <br>
+> 2회 : (시도중)
 - 배열을 이용한 덱으로 구현
-- 사용한 연산 :
+- 사용한 연산 : reverse, delete
 <br>
