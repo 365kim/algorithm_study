@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 11:52:33 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/06 01:19:15 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/06 01:46:01 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@
 # define TRUE 1
 # define FALSE 0
 
-int  deque[100000];
-char command[100000];
-char array_content[200002];
+int  deque[200000];
+char command[200000];
+char array_content[400000];
 
 int main(void)
 {
