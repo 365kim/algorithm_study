@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 11:52:33 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/04 13:27:51 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/06 00:08:18 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,16 +79,25 @@ int main(void)
 		else if (direction == FRONT)
 		{
 			printf("[");
-			for (i = idx_front; i < idx_back; i++)
-				printf("%d,",deque[i]);
-			printf("%d]\n", deque[i]);
+			for (i = idx_front; i <= idx_back; i++)
+			{
+				printf("%d", deque[i]);
+				if (i < idx_back)
+					printf(",");
+			}
+			printf("]\n");
 		}
 		else
 		{
 			printf("[");
-			for (i = idx_back; i > idx_front; i--)
-				printf("%d,",deque[i]);
-			printf("%d]\n", deque[i]);
+			for (i = idx_back; i >= idx_front; i--)
+			{
+				printf("%d",deque[i]);
+				if (i > idx_front)
+					printf(",");
+			}
+			printf("]\n");
 		}
 	}
+	return (0);
 }
