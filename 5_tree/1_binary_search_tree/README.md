@@ -1,11 +1,13 @@
 ## Binary Search Tree
-- 노드의 왼쪽 및 오른쪽 subtree는 각각이 또 하나의 이진검색트리임
-- 노드의 왼쪽 subtree에는 그 노드의 값보다 작은 값들을 지닌 노드들로 이루어짐
-- 노드의 오른쪽 subtree에는 그 노드의 값과 같거나 큰 값들을 지닌 노드들로 이루어짐  
+- 이진탐색트리
+    - 노드의 왼쪽 및 오른쪽 subtree는 각각이 또 하나의 이진탐색트리임
+    - 노드의 왼쪽 subtree에는 그 노드의 값보다 작은 값들을 가진 노드들로 이루어짐
+    - 노드의 오른쪽 subtree에는 그 노드의 값과 크거나 같은 값들을 가진 노드들로 이루어짐
+- [참고자료](https://jocoma.tistory.com/entry/%ED%8A%B8%EB%A6%AC2-%EC%9E%90%EA%B0%80-%EA%B7%A0%ED%98%95-%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC?category=862940)
 <br>
 
 ### 트리 할당/해제
-- 관련예제 : [init](./tree_init.c), [create_node](./create_elem.c), [free](./free_tree)
+- 관련예제 : [init](./tree_init.c), [create_node](./create_elem.c), [free](./free_tree.)
 
 ### 참조연산
 - 참조하고자 하는 값이 root의 값보다 작을 경우, 왼쪽 subtree에서 재귀적으로 검색
@@ -20,4 +22,4 @@
     - 삭제할 노드에 leaf일 경우(child가 없을 경우)
     - 삭제할 노드에 child가 1개일 경우
     - 삭제할 노드에 child가 2개일 경우
-- 관련예제 : [tree_delete](./tree_delete)
+- 관련예제 : [delete](./tree_delete.c)
