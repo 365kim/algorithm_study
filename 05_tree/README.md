@@ -10,7 +10,7 @@
 
 ### [5.1.](./1_binary_search_tree) **Binary Search Tree**
 
-### [5.2.](./2_binary_heap) **Binary Heap(priority queue)**
+### [5.2.](./2_heap) **Heap(priority queue)**
 
 ### [5.3.](./3_trie) **Trie(prefix tree)**
 
