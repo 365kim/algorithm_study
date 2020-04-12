@@ -17,11 +17,11 @@
 
 | No. | Topic | Subopics | Schedule | 
 |:---:|:---|:---|:---|
-| 01 | [__Linked List__](/1_linked_list) | [__1)__ ](/1_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/1_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/1_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
-| 02 | [__Stack__](/2_stack) | [__1)__ ](/2_stack/1_stack_using_array)using array [__2)__ ](/2_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
-| 03 | [__Queue__](/3_queue) | [__1)__ ](/3_queue/1_queue_using_array)using array [__2)__ ](/2_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
-| 04 | [__Deque__](/4_deque) | [__1)__ ](/4_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
-| 05 | [__Tree__](/5_tree) | [__1)__ ](/5_tree/1_binary_search_tree)binary search tree [__2)__ ](/5_tree/2_binary_heap)heap(priority queue) [__3)__ ](/5_tree/3_trie)trie <br> [__4)__ ](/5_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
+| 01 | [__Linked List__](/01_linked_list) | [__1)__ ](/01_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/01_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/01_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
+| 02 | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
+| 03 | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
+| 04 | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
+| 05 | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
 | 06 | Sort  | closed |	*2020. 04. 27. ~ 05. 03.* |
 | 07 | Hash  | closed |*2020. 05. 04. ~ 05. 10.* |
 | 08 | Graph(shortest path)	| closed |	*2020. 05. 11. ~ 05. 17.* |
