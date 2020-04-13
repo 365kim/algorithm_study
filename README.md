@@ -6,27 +6,32 @@
 
 ### :memo: Definition
 - `자료구조` : 데이터를 효율적으로 이용할 수 있도록 컴퓨터에 저장하는 방법
-- 데이터의 특성에 따라 분류하여 구성하고 저장 및 처리하는 모든 작업을 의미
-- 데이터 처리의 성능과 효율에 직접적으로 영향을 끼치기 때문에 실제 데이터들의 관계를 잘 반영해야 함
+    - 데이터의 특성에 따라 분류하여 구성하고 저장 및 처리하는 모든 작업을 의미
+    - 데이터 처리의 성능과 효율에 직접적으로 영향을 끼치기 때문에 실제 데이터들의 관계를 잘 반영해야 함
 - `알고리즘` : 자료구조로 표현된 데이터들을 처리하는 절차
+
+- `Big-O 표기법` : 입력의 크기에 따라 근사적으로 성능을 표기하는 방법
+    - 알고리즘의 시간복잡도와 공간복잡도를 나타내는데 사용
+    - 성능은 항상 최선, 평균, 최악 중 보장의 의미가 있는 최악의 경우로 얘기해야 함
+    - 시간복잡도 _(cpu)_ 가 공간복잡도 _(memory)_ 보다 중요
 ---
 
 
 ### :memo: Contents
 - Curriculum designed by [**nadarm**](https://github.com/nadarm/42-algorithm)
 
-| No. | Topic | Subopics | Schedule | 
+| No. | Topic | Subtopics | Schedule | 
 |:---:|:---|:---|:---|
-| 01 | [__Linked List__](/1_linked_list) | [__1)__ ](/1_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/1_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/1_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
-| 02 | [__Stack__](/2_stack) | [__1)__ ](/2_stack/1_stack_using_array)using array [__2)__ ](/2_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
-| 03 | [__Queue__](/3_queue) | [__1)__ ](/3_queue/1_queue_using_array)using array [__2)__ ](/2_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
-| 04 | [__Deque__](/4_deque) | [__1)__ ](/4_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
-| 05 | [__Tree__](/5_tree) | [__1)__ ](/5_tree/1_binary_search_tree)binary search tree [__2)__ ](/5_tree/2_binary_heap)heap(priority queue) [__3)__ ](/5_tree/3_trie)trie <br> [__4)__ ](/5_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
+| 01 | [__Linked List__](/01_linked_list) | [__1)__ ](/01_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/01_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/01_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
+| 02 | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
+| 03 | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
+| 04 | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
+| 05 | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
+|||||
 | 06 | Sort  | closed |	*2020. 04. 27. ~ 05. 03.* |
 | 07 | Hash  | closed |*2020. 05. 04. ~ 05. 10.* |
 | 08 | Graph(shortest path)	| closed |	*2020. 05. 11. ~ 05. 17.* |
 | 09 | Graph(MST) | closed |	*2020. 05. 18. ~ 05. 24.* |
-|||||
 | 10 | Brute-Force(DFS, BFS) | closed |	*2020. 05. 25. ~ 05. 31.* |
 | 11 | Dynamic Programming  | closed |	*2020. 06. 01. ~ 06. 07.* |
 | 12 | Greedy Algorithm | closed |	*2020. 06. 08. ~ 06. 14.* |
