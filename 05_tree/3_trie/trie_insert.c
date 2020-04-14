@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 12:16:17 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 15:44:20 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/14 15:57:03 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ bool trie_insert(t_trie *trie, char *str)
 {
 	t_node	*curr;
 	int     i;
-	int		j;
+	int     j;
 
 	if (trie == NULL || str == NULL || str[0] == '\0')
 		return (false);
