@@ -1,37 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   trie.h                                             :+:      :+:    :+:   */
+/*   free_trie.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/13 17:25:47 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 13:50:18 by mihykim          ###   ########.fr       */
+/*   Created: 2020/04/14 13:24:24 by mihykim           #+#    #+#             */
+/*   Updated: 2020/04/14 13:52:40 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TRIE_H
-# define TRIE_H
+#include "trie.h"
 
-#include <stdbool.h>
-#include <stdlib.h>
-#include <string.h>
-
-# define ALPHABETS 26
-# define SAME 0
-
-typedef struct		s_node
+void	free_elem(t_node *node)
 {
-	struct s_node	*next[26];
-	bool			finish;
-}					t_node;
+	int i;
 
-typedef t_node *t_trie[26];
+	if (node == NULL)
+		return ;
+	i = 0;
+	while (i < ALPHABETS)
+	{
+		free_elem(node->next[i]);
+		i++;
+	}
+	free(node);
+}
 
-t_trie	*trie_init(void);
-t_node	*create_elem(void);
-bool	trie_insert(t_trie *trie, char *str);
-bool	trie_find(t_trie *trie, char *str);
-void	free_trie(t_trie *trie);
+void	free_trie(t_trie *trie)
+{
+	t_node	*curr;
+	int     i;
 
-#endif
+	if (trie == NULL || *trie == NULL)
+		return ;
+	curr = (*trie)[0];
+	i = 0;
+	while (i < ALPHABETS)
+	{
+		free_elem(curr);
+		curr++;
+		i++;
+	}
+	free(trie);
+}
