@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/13 17:25:47 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 13:50:18 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/14 16:02:33 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 # define ALPHABETS 26
 # define SAME 0
 
-typedef struct		s_node
+typedef struct	s_node
 {
 	struct s_node	*next[26];
-	bool			finish;
-}					t_node;
+	bool            finish;
+}				t_node;
 
 typedef t_node *t_trie[26];
 

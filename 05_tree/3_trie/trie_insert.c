@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 12:16:17 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 15:57:03 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/14 16:13:06 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,10 @@ bool trie_insert(t_trie *trie, char *str)
 	while (str[i])
 	{
 		j = str[i] - 'a';
-		if (curr->next[j] == NULL)
-			curr->next[j] = create_elem();
+		curr = curr->next[j];
+		if (curr == NULL)
+			curr = create_elem();
 		i++;
-		if (str[i])
-			curr = curr->next[j];
 	}
 	curr->finish = true;
 	return (true);

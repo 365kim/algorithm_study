@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 11:56:48 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 15:57:49 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/14 16:09:35 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ t_trie	*trie_init(void)
 		return (NULL);
 	i = 0;
 	while (i < ALPHABETS)
-		trie[0][i++] = 0;
+		(*trie)[i++] = 0;
 	return (trie);
 }
