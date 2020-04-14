@@ -28,13 +28,13 @@
 | 04 | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
 | 05 | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
 |||||
-| 06 | Sort  | closed |	*2020. 04. 27. ~ 05. 03.* |
-| 07 | Hash  | closed |*2020. 05. 04. ~ 05. 10.* |
-| 08 | Graph(shortest path)	| closed |	*2020. 05. 11. ~ 05. 17.* |
-| 09 | Graph(MST) | closed |	*2020. 05. 18. ~ 05. 24.* |
-| 10 | Brute-Force(DFS, BFS) | closed |	*2020. 05. 25. ~ 05. 31.* |
-| 11 | Dynamic Programming  | closed |	*2020. 06. 01. ~ 06. 07.* |
-| 12 | Greedy Algorithm | closed |	*2020. 06. 08. ~ 06. 14.* |
-| 13 | Divide and Conquer | closed |	*2020. 06. 15. ~ 06. 21.* |
-| 14 | binary search  | closed |	*2020. 06. 22. ~ 06. 28.* |
-| 15 | KMP  | closed |	*2020. 06. 29. ~ 07. 05.* |
+| 06 | Sort  | closed |	*2020. 05. 11. ~ 05. 17.* |
+| 07 | Hash  | closed | *2020. 05. 18. ~ 05. 24.* |
+| 08 | Graph(shortest path)	| closed | *2020. 05. 25. ~ 05. 31.* |
+| 09 | Graph(MST) | closed | *2020. 06. 01. ~ 06. 07.* |
+| 10 | Brute-Force(DFS, BFS) | closed |	*2020. 06. 08. ~ 06. 14.* |
+| 11 | Dynamic Programming  | closed |	*2020. 06. 15. ~ 06. 21.* |
+| 12 | Greedy Algorithm | closed | *2020. 06. 22. ~ 06. 28.* |
+| 13 | Divide and Conquer | closed | *2020. 06. 29. ~ 07. 05.* |
+| 14 | binary search  | closed | *2020. 07. 06. ~ 07. 12.* |
+| 15 | KMP  | closed | *2020. 07. 13. ~ 07. 19.* |
