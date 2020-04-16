@@ -7,7 +7,7 @@
 - 관련예제 : [create_elem](./create_elem.c)
 
 ### 참조연산
-- `find` : 주어진 원소가 해당하는 집합을 반환 _(집합을 대표하는 원소 root를 반환)_ 하기 위하여 재귀함수 사용
+- `find` : 주어진 원소가 해당하는 집합을 반환 _(집합을 대표하는 원소 root를 반환)_ 
 - `is_disjoint` : 두 집합의 root가 다른지 검사하여 서로소 집합인지 판별
 - 관련예제 : [find](./find.c), [is_disjoint](./is_disjoint.c)
 
