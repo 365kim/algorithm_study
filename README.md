@@ -20,15 +20,15 @@
 ### :memo: Contents
 - Curriculum designed by [**nadarm**](https://github.com/nadarm/42-algorithm)
 
-| No. | Topic | Subtopics | Schedule | 
+| Chapter | Topic | Subtopics | Schedule | 
 |:---:|:---|:---|:---|
-| 01 | [__Linked List__](/01_linked_list) | [__1)__ ](/01_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/01_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/01_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
-| 02 | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
-| 03 | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
-| 04 | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
-| 05 | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_ind)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
+| [01](https://github.com/nadarm/42-algorithm/tree/master/linked_list) | [__Linked List__](/01_linked_list) | [__1)__ ](/01_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/01_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/01_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
+| [02](https://github.com/nadarm/42-algorithm/tree/master/stack) | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
+| [03](https://github.com/nadarm/42-algorithm/tree/master/queue) | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
+| [04](https://github.com/nadarm/42-algorithm/tree/master/deque) | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
+| [05](https://github.com/nadarm/42-algorithm/tree/master/tree) | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_find)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
 |||||
-| 06 | [__Sort__](/06_sort)  |  [__1)__ ](/06_sort/1_bubble_sort)bubble sort [__2)__ ](/06_sort/2_heap_sort)heap sort [__3)__ ](/06_sort/3_quick_sort)quick sort [__4)__ ](/06_sort/4_merge_sort)merge sort |	*2020. 05. 11. ~ 05. 17.* |
+| [06](https://github.com/nadarm/42-algorithm/tree/master/sort) | [__Sort__](/06_sort)  |  [__1)__ ](/06_sort/1_bubble_sort)bubble sort [__2)__ ](/06_sort/2_heap_sort)heap sort [__3)__ ](/06_sort/3_quick_sort)quick sort [__4)__ ](/06_sort/4_merge_sort)merge sort |	*2020. 05. 11. ~ 05. 17.* |
 | 07 | Hash  | closed | *2020. 05. 18. ~ 05. 24.* |
 | 08 | Graph(shortest path)	| closed | *2020. 05. 25. ~ 05. 31.* |
 | 09 | Graph(MST) | closed | *2020. 06. 01. ~ 06. 07.* |
