@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/13 17:25:47 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 16:02:33 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/14 16:14:41 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
-#include <string.h>
 
 # define ALPHABETS 26
-# define SAME 0
 
 typedef struct	s_node
 {

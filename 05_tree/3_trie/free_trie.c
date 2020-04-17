@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 13:24:24 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 13:52:40 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/17 12:00:48 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,14 @@ void	free_elem(t_node *node)
 
 void	free_trie(t_trie *trie)
 {
-	t_node	*curr;
 	int     i;
 
 	if (trie == NULL || *trie == NULL)
 		return ;
-	curr = (*trie)[0];
 	i = 0;
 	while (i < ALPHABETS)
 	{
-		free_elem(curr);
-		curr++;
+		free_elem((*trie)[i]);
 		i++;
 	}
 	free(trie);

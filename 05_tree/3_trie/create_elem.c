@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 13:09:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/14 13:51:57 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/17 02:22:06 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_node	*create_elem(void)
 		return (NULL);
 	i = 0;
 	while (i < ALPHABETS)
-		node->next[i++] = 0;
+		node->next[i++] = NULL;
 	node->finish = false;
 	return (node);
 }
