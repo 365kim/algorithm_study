@@ -1,7 +1,7 @@
 ## [1920번](https://www.acmicpc.net/problem/1920) 수 찾기
-> 1회 : 
-- ~으로 구현
-- 사용한 연산 :
+> 1회 : 성공
+- stdlib헤더에 정의되어있는 qsort()함수로 정렬 후 이진탐색으로 구현
+- `qsort(void *base, size_t nel, size_t width, int (*compar)(const void *, const void *))`
 <br>
 
 ## [5639번](https://www.acmicpc.net/problem/5639) 이진검색트리
