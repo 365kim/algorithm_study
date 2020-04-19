@@ -5,9 +5,9 @@
 <br>
 
 ## [5639번](https://www.acmicpc.net/problem/5639) 이진검색트리
-> 1회 : 
-- ~으로 구현
-- 사용한 연산 :
+> 1회 : 성공
+- 연결리스트를 이용한 이진탐색트리로 구현
+- 후위순회 _(postorder traversal)_ 결과에 맞추어 출력하기 위해 재귀함수 사용
 <br>
 
 ## [1991번](https://www.acmicpc.net/problem/1991) 트리 순회
