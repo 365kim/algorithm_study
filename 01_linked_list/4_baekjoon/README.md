@@ -1,7 +1,7 @@
 ## [2562번](https://www.acmicpc.net/problem/2562) 최댓값
 > 1회 : 런타임 에러 <br>
 > 2회 : 런타임 에러 <br>
-> 3회 : [성공](./baekjoon_01546_average.c)
+> 3회 : [성공](./baekjoon_02562_max.c)
 - 연결리스트 사용 시 런타임에러가 자주 발생함
 - Valgrind 테스트 결과 "Conditional jump or move depends on uninitialised value(s)"라는 오류가 다수 발생
 - 메모리 할당, 해제, 초기화 문제를 보완 후 제출
@@ -19,6 +19,6 @@
 <br>
 
 ## [1546번](https://www.acmicpc.net/problem/1546) 평균
-> 1회 :  [성공](./baekjoon_02562_max.c)
+> 1회 :  [성공](./baekjoon_01546_average.c)
 - 앞서 발생했던 것과 같은 메모리 할당, 해제, 초기화에서 비슷하게 문제가 있었지만 valgrind로 에러를 먼저 잡고 제출
 - 참고자료 : [valgrind 활용법2](https://riptutorial.com/ko/cplusplus/example/9072/%EB%82%98%EC%9D%98-c-plusplus-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9D%80-segfault---valgrind%EB%A1%9C-%EB%81%9D%EB%82%A9%EB%8B%88%EB%8B%A4-)
