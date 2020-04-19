@@ -50,11 +50,13 @@
 > 1회 : 
 - ~으로 구현
 - 사용한 연산 :
+<br>
 
 ## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현록
 > 1회 : 
 - ~으로 구현
 - 사용한 연산 :
+<br>
 
 ## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크록
 > 1회 : 
