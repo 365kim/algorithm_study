@@ -7,12 +7,14 @@
 ## [5639번](https://www.acmicpc.net/problem/5639) 이진검색트리
 > 1회 : [성공](./baekjoon_05639_binary_search_tree.c)
 - 연결리스트를 이용한 이진탐색트리로 구현
+- 문제에 입력 종결조건이 따로 주어지지 않아 while (scanf != EOF) 로 입력받음
 - 후위순회 _(postorder traversal)_ 결과에 맞추어 출력하기 위해 재귀함수 사용
 <br>
 
 ## [1991번](https://www.acmicpc.net/problem/1991) 트리 순회
-> 1회 : 
-- ~으로 구현
+> 1회 : [성공](./baekjoon_01991_tree_traversal.c)
+- 연결리스트를 이용한 이진트리로 구현
+- scanf 와 scanf 사이에 개행이 버퍼에 들어가 오류가 발생하는 것을 막기위해 getchar()사용
 <br>
 
 ## [1927번](https://www.acmicpc.net/problem/1927) 최소 힙
