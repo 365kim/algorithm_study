@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 21:03:47 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/10 22:10:20 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/20 14:54:12 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*heap_pop(t_heap *heap)
 	i = 1;
 	while (1)
 	{
-		if (2 * i + 1 > (int)heap->size)
+		if (2 * i > (int)heap->size)
 			break ;
 		else if (2 * i + 1 > (int)heap->size)
 			min_child = 2 * i;
@@ -41,3 +41,7 @@ void	*heap_pop(t_heap *heap)
 	}
 	return (storage);
 }
+
+/*
+** line 30 : changed if condition from '2 * i + 1 >' to '2 * i >'
+*/
