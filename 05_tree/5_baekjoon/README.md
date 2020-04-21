@@ -23,8 +23,8 @@
 <br>
 
 ## [11279번](https://www.acmicpc.net/problem/11279) 최대 힙
-> 1회 : 
-- ~으로 구현
+> 1회 : [성공](baekjoon_11279_max_heap.c) 
+- 배열을 이용한 최소 힙으로 구현
 <br>
 
 ## [11286번](https://www.acmicpc.net/problem/11286) 절대값 힙
