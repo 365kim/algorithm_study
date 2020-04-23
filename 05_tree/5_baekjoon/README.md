@@ -33,8 +33,10 @@
 <br>
 
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합
-> 1회 : 
-- ~으로 구현
+> 1회 : 실패 <br>
+> 2회 : 실패 <br>
+> 3회 : 시도중
+- 트라이로 구현
 <br>
 
 ## [4258번](https://www.acmicpc.net/problem/4258) 생태학
@@ -48,8 +50,9 @@
 <br>
 
 ## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현록
-> 1회 : 
-- ~으로 구현
+> 1회 : 시간초과
+> 2회 : 시도중
+- 유니온파인드로 구현
 <br>
 
 ## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크록
