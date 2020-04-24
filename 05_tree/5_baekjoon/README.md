@@ -7,14 +7,14 @@
 ## [5639번](https://www.acmicpc.net/problem/5639) 이진검색트리
 > 1회 : [성공](./baekjoon_05639_binary_search_tree.c)
 - 연결리스트를 이용한 이진탐색트리로 구현
-- 문제에 입력 종결조건이 따로 주어지지 않아 while (scanf != EOF) 로 입력받음
+- 문제에 입력 종결조건이 따로 주어지지 않아 `while (scanf != EOF)` 로 입력받음
 - 후위순회 _(postorder traversal)_ 결과에 맞추어 출력하기 위해 재귀함수 사용
 <br>
 
 ## [1991번](https://www.acmicpc.net/problem/1991) 트리 순회
 > 1회 : [성공](./baekjoon_01991_tree_traversal.c)
 - 연결리스트를 이용한 이진트리로 구현
-- scanf 와 scanf 사이에 개행이 버퍼에 들어가 오류가 발생하는 것을 막기위해 getchar()사용
+- scanf 와 scanf 사이에 개행이 버퍼에 들어가 오류가 발생하는 것을 막기위해 `getchar()`사용
 <br>
 
 ## [1927번](https://www.acmicpc.net/problem/1927) 최소 힙
@@ -29,7 +29,7 @@
 
 ## [11286번](https://www.acmicpc.net/problem/11286) 절대값 힙
 > 1회 : 
-- ~으로 구현
+- 배열을 이용한 최소 힙으로 구현
 <br>
 
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합
@@ -41,20 +41,21 @@
 
 ## [4258번](https://www.acmicpc.net/problem/4258) 생태학
 > 1회 : 
-- ~으로 구현
+- 트라이로 구현
 <br>
 
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
 > 1회 : 
-- ~으로 구현
+- 트라이로 구현
 <br>
 
-## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현록
-> 1회 : 시간초과
+## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현
+> 1회 : 시간초과 <br>
+> 2회 : 런타임에러 <br>
 > 2회 : 시도중
 - 유니온파인드로 구현
 <br>
 
-## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크록
+## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크
 > 1회 : 
-- ~으로 구현
+- 유니온파인드로 구현
