@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 15:52:27 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/21 16:41:02 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/25 22:05:54 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct  s_node
 }               t_node;
 
 t_node *root[26];
-char str[500];
+char str[501];
 
 t_node *activate_node(void)
 {
@@ -57,8 +57,7 @@ int	main(void)
 
 	while (i < 26)
 		root[i++] = activate_node();
-	scanf("%d\n", &N);
-	scanf("%d\n", &M);
+	scanf("%d %d\n", &N, &M);
 	while(N--)
 	{
 		scanf("%s", str);
@@ -86,12 +85,17 @@ int	main(void)
 		{
 			j = str[i] - 'a';
 			if (curr->next[j] == NULL)
-				continue ;
+				break ;
 			curr = curr->next[j];
 		}
-		if (curr->finish == true)
+		if (str[i] == '\0' && curr->finish == true)
 			count++;
 	}
 	printf("%d", count);
 	return (0);
 }
+
+/*
+** line 89 : Changed from 'continue' to 'break'
+** line 91 : Added str[i] == '\0' condition
+*/
