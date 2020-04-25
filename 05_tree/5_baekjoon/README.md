@@ -40,7 +40,7 @@
 - 이중 반복문 내에서 break가 되어야 할 부분에서 continue를 잘못 사용함
 <br>
 
-## [4258번](https://www.acmicpc.net/problem/4258) 생태학
+## [4358번](https://www.acmicpc.net/problem/4358) 생태학
 > 1회 : 
 - 트라이로 구현
 <br>
