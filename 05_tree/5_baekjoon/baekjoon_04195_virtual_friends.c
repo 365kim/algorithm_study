@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 15:47:45 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/25 19:07:34 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/04/25 19:26:15 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,9 @@ int name_to_idx(char input[])
 			return (i);
 		i++;
 	}
-	strcpy(name[i], input);
+	strcpy(name[n], input);
+	parent[n] = n;
+	size[n] = 1;
 	return (n++);
 }
 
@@ -59,7 +61,7 @@ int union_by_size(int a, int b)
 
 	if (a == b)
 		return (size[a]);
-	if (size[a] > size[b])
+	if (size[a] < size[b])
 	{
 		tmp = b;
 		b = a;
@@ -68,16 +70,6 @@ int union_by_size(int a, int b)
 	size[a] += size[b];
 	parent[b] = a;
 	return (size[a]);
-}
-
-void initialize(void)
-{
-	name[n][0] = '\0';
-	name[n + 1][0] = '\0';
-	size[n] = 1;
-	size[n + 1] = 1;
-	parent[n] = n;
-	parent[n + 1] = n + 1;
 }
 
 int main(void)
@@ -93,7 +85,6 @@ int main(void)
 		n = 0;
 		while(f--)
 		{
-			initialize();
 			scanf("%s %s", name1, name2);
 			a = name_to_idx(name1);
 			b = name_to_idx(name2);

@@ -18,12 +18,12 @@
 <br>
 
 ## [1927번](https://www.acmicpc.net/problem/1927) 최소 힙
-> 1회 : [성공](baekjoon_01927_min_heap.c) 
+> 1회 : [성공](./baekjoon_01927_min_heap.c) 
 - 배열을 이용한 최소 힙으로 구현
 <br>
 
 ## [11279번](https://www.acmicpc.net/problem/11279) 최대 힙
-> 1회 : [성공](baekjoon_11279_max_heap.c) 
+> 1회 : [성공](./baekjoon_11279_max_heap.c) 
 - 배열을 이용한 최소 힙으로 구현
 <br>
 
@@ -35,7 +35,7 @@
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합
 > 1회 : 실패 <br>
 > 2회 : 실패 <br>
-> 3회 : 시도중
+> 3회 : 시도중(./baekjoon_14425_string_set.c)
 - 트라이로 구현
 <br>
 
@@ -52,13 +52,13 @@
 ## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현
 > 1회 : 시간초과 <br>
 > 2-6회 : 런타임에러 <br>
-> 7회 : 성공
+> 7회 : 성공(./baekjoon_01717_expression_of_set.c)
 - 연결리스트를 이용한 유니온파인드로 구현
 - find함수에서 경로최적화를 하지않은 문제로 시간초과 발생
 - 최대 n + 1개의 집합에서 배열의 크기를 `n + 1`이 아닌 `n`만큼만 할당한 문제와 `init[a - 1]`과 같이 배열의 index를 잘못 참조해서 런타임 오류발생
 <br>
 
 ## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크
-> 1-3회 : 시간초과 <br>
-> 4회 : 시도중
+> 1-4회 : 시간초과 <br>
+> 5회 : 시도중(./baekjoon_04195_virtual_friends.c)
 - 유니온파인드로 구현
