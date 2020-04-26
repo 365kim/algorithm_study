@@ -40,6 +40,7 @@
 - 이중 반복문 내에서 break가 되어야 할 부분에서 continue를 잘못 사용함
 <br>
 
+<<<<<<< HEAD
 ## [4258번](https://www.acmicpc.net/problem/4258) 생태학
 > 1회 : 출력초과 <br>
 > 2회 : 실패 <br>
@@ -48,6 +49,11 @@
 - 테스트를 위해 넣어둔 `printf("\n")`로 출력초과 발생
 - white space를 포함해서 개행까지 하나의 문자열로 받기 위해 `fgets`사용
 - `str[i] != '\0'`이 아닌 `str[i] != '\n'`로 문자열 검사
+=======
+## [4358번](https://www.acmicpc.net/problem/4358) 생태학
+> 1회 : 
+- 트라이로 구현
+>>>>>>> 2adf88d5ea82136230d97adef431da32a23eca93
 <br>
 
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
