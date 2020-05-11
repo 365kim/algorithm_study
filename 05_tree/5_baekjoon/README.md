@@ -30,8 +30,12 @@
 ## [11286번](https://www.acmicpc.net/problem/11286) 절대값 힙
 > 1회 : 실패 <br>
 > 2회 : 시간초과 <br>
-> 3회 : 시도중
-- 배열을 이용한 절대 힙으로 구현
+> 3회 : 실패 <br>
+> 4회 : [성공](./baekjoon_11286_abs_heap.c)
+- 배열을 이용한 절대값 힙으로 구현
+- push, pop에서 정렬조건을 정확하게 표현하지 못해서 여러번 실패
+    - 절대값이 다를 경우: abs(heap[i/2]) < abs(heap[i]) 되도록 정렬
+	- 절대값이 같을 경우: heap[i/2] < heap[i] 되도록 정렬
 <br>
 
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합

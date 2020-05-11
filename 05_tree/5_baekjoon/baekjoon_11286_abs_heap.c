@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   baekjoon_01927_abs_heap.c                          :+:      :+:    :+:   */
+/*   baekjoon_11286_abs_heap.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/11 13:19:50 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/11 14:52:06 by mihykim          ###   ########.fr       */
+/*   Created: 2020/05/11 15:44:57 by mihykim           #+#    #+#             */
+/*   Updated: 2020/05/11 15:59:55 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,12 @@ void	insert(int input)
 
 	i = ++size;
 	heap[i] = input;
-	while (i/2 && abs(heap[i]) < abs(heap[i/2]))
+	while (i/2 && 
+			(abs(heap[i]) < abs(heap[i/2])
+			 || (abs(heap[i]) == abs(heap[i/2]) && heap[i] < heap[i/2])))
 	{
 		swap(&heap[i/2], &heap[i]);
 		i = i/2;
-	}
-	while (abs(heap[i]) == abs(heap[i - 1]) && heap[i] < heap[i - 1])
-	{
-		swap(&heap[i - 1], &heap[i]);
-		i = i - 1;
 	}
 }
 
@@ -77,18 +74,17 @@ void	print_and_delete(void)
 		if (2 * i + 1 > size)
 			min_child = 2 * i;
 		else
-			min_child = abs(heap[2 * i]) <= abs(heap[2 * i + 1]) ? 2 * i : 2 * i + 1;
-		if (abs(heap[i]) <= abs(heap[min_child]))
+		{
+			if (abs(heap[2 * i]) == abs(heap[2 * i + 1]))
+				min_child = heap[2 * i] <= heap[2 * i + 1] ? 2 * i : 2 * i + 1;
+			else
+				min_child = abs(heap[2 * i]) < abs(heap[2 * i + 1]) ? 2 * i : 2 * i + 1;
+		}
+		if ((abs(heap[i]) == abs(heap[min_child]) && heap[i] < heap[min_child])
+				|| (abs(heap[i]) < abs(heap[min_child])))
 			return ;
 		swap(&heap[i], &heap[min_child]);
 		i = min_child;
-	}
-	while (i + 1 <= size)
-	{
-		if (abs(heap[i]) != abs(heap[i + 1]) || heap[i] <= heap[i + 1])
-			return ;
-		swap(&heap[i], &heap[i + 1]);
-		i++;
 	}
 }
 
