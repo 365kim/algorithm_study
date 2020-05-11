@@ -35,7 +35,7 @@
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합
 > 1회 : 실패 <br>
 > 2회 : 실패 <br>
-> 3회 : 성공(./baekjoon_14425_string_set.c)
+> 3회 : [성공](./baekjoon_14425_string_set.c)
 - 연결리스트를 이용한 트라이로 구현
 - 이중 반복문 내에서 break가 되어야 할 부분에서 continue를 잘못 사용함
 <br>
