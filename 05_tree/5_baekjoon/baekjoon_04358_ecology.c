@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 12:03:12 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/26 14:58:04 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/12 15:55:18 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-# define n 96
+# define n 128
 
 typedef struct  s_node
 {
@@ -41,39 +41,13 @@ int total = 0;
 t_node *activate_node(void)
 {
 	t_node *node;
-	int i = 0;
+	int i;
 
 	node = malloc(sizeof(t_node));
-	for (int i = 0 ; i < n ; i++)
+	for (i = 0 ; i < n ; i++)
 		node->next[i] = NULL;
 	node->finish = 0;
 	return (node);
-}
-
-int to_idx(char c)
-{
-	if (c >= 'A' && c <= 'Z')
-		return (c - 'A');
-	if (c >= 'a' && c <= 'z')
-		return (c - 'a' + 26);
-	if (c >= ' ' && c <= '@')
-		return (c - ' ' + 52);
-	if (c >= '[' && c <= '`')
-		return (c - '[' + 85);
-	return (c - '{' + 91);
-}
-
-char to_char(int i)
-{
-	if (i >= 0 && i < 26)
-		return (i + 'A');
-	if (i >= 26 && i < 52)
-		return (i + 'a' - 26);
-	if (i >= 52 && i < 85)
-		return (i + ' ' - 52);
-	if (i >= 85 && i < 91)
-		return (i + '[' - 85);
-	return (i + '{' - 91);
 }
 
 void print_in_order(t_node *node, char buff[], int b)
@@ -89,7 +63,7 @@ void print_in_order(t_node *node, char buff[], int b)
 	}
 	for (int i = 0; i < n ; i++)
 	{
-		buff[b] = to_char(i);
+		buff[b] = i;
 		print_in_order(node->next[i], buff, b);
 	}
 }
@@ -104,13 +78,13 @@ int	main(void)
 
 	while (fgets(str, 30, stdin) != NULL)
 	{
-		j = to_idx(str[0]);
+		j = str[0];
 		if (root[j] == NULL)
 			root[j] = activate_node();
 		curr = root[j];
 		for (i = 1 ; str[i] != '\n' ; i++)
 		{
-			j = to_idx(str[i]);
+			j = str[i];
 			if (curr->next[j] == NULL)
 				curr->next[j] = activate_node();
 			curr = curr->next[j];
@@ -121,7 +95,7 @@ int	main(void)
 	memset(buff, 0, 31);
 	for (i = 0; i < n ; i++)
 	{
-		buff[0] = to_char(i);
+		buff[0] = i;
 		print_in_order(root[i], buff, 0);
 	}
 	return (0);

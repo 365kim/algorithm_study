@@ -50,11 +50,12 @@
 ## [4358번](https://www.acmicpc.net/problem/4358) 생태학
 > 1회 : 출력초과 <br>
 > 2회 : 실패 <br>
-> 3회 : [시도중](./baekjoon_04358_ecology.c)
+> 3회 : 성공(./baekjoon_04358_ecology.c)
 - 연결리스트를 이용한 트라이로 구현
 - 테스트를 위해 넣어둔 `printf("\n")`로 출력초과 발생
 - white space를 포함해서 개행까지 하나의 문자열로 받기 위해 `fgets`사용
 - `str[i] != '\0'`이 아닌 `str[i] != '\n'`로 문자열 검사
+- 문제의 '사전순으로 출력'은 아스키코드 순서로 하면되는데 굳이 쪼개다가 잘못 쪼개서 틀림
 
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
 > 1회 : 
