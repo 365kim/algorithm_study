@@ -6,7 +6,7 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 17:14:00 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/12 20:20:26 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/12 20:28:58 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,29 +66,29 @@ int main(void)
 	int n_test;
 	int n_case;
 	char nbr[11];
-	bool flag;
+	bool result;
 
 	scanf("%d", &n_test);
 	while (n_test--)
 	{
 		scanf("%d", &n_case);
-		flag = true;
+		result = YES;
 		while (n_case--)
 		{
 			scanf("%s", nbr);
-			if (flag == false)
+			if (result == NO)
 				continue ;
 			j = *nbr - '0';
 			if (root[j] && root[j]->finish == true)
 			{
-				flag = NO;
+				result = NO;
 				continue ;
 			}
 			if (root[j] == NULL)
 				root[j] = activate_node();
-			flag = check_node(root[j], nbr + 1);
+			result = check_node(root[j], nbr + 1);
 		}
-		if (flag == YES)
+		if (result == YES)
 			printf("YES\n");
 		else
 			printf("NO\n");
