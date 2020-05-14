@@ -6,7 +6,7 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 17:14:00 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/12 20:28:58 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/14 17:27:48 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,9 @@ bool check_node(t_node *curr, char *nbr)
 	{
 		if (curr->finish == true)
 			return (NO);
+		for (int i = 0; i < 10; i++)
+			if (curr->next[i] != NULL)
+				return (NO);
 		curr->finish = true;
 		return (YES);
 	}

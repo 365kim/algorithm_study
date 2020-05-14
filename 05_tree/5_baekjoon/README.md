@@ -60,8 +60,12 @@
 
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
 > 1회 : 실패 <br>
-> 2회 : [시도중](./baekjoon_05052_phone_list.c)
-- 연결리스트를 이용한 트라이로 구현
+> 2회 : 실패 <br>
+> 3회 : [시도중](./baekjoon_05052_phone_list.c)
+- 연결리스트를 이용한 트라이(10진트리)로 구현
+- consistent 조건
+    - nbr을 검사하며 거쳐가는 노드 중에 finish==true인 노드가 있을 경우
+    - nbr의 마지막 노드인데 그 노드의 child가 있을 경우
 <br>
 
 ## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현
