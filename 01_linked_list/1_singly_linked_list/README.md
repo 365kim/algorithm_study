@@ -5,8 +5,8 @@
     - [Array관련이야기 - LinkedList](https://blog.naver.com/skyvvv624/220916289329)
 <br>
 
-## 예제
-- [Nadarm's Exercise](https://github.com/nadarm/42-algorithm/tree/master/linked_list/singly_linked_list) (예제 원본)
+## Nadarm's Exercise
+- [예제 원본](https://github.com/nadarm/42-algorithm/tree/master/linked_list/singly_linked_list)
 
 #### 노드생성
 - 새로운 노드를 할당하고 초기화함
