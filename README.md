@@ -26,15 +26,15 @@
 | [02](https://github.com/nadarm/42-algorithm/tree/master/stack) | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
 | [03](https://github.com/nadarm/42-algorithm/tree/master/queue) | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
 | [04](https://github.com/nadarm/42-algorithm/tree/master/deque) | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
-| [05](https://github.com/nadarm/42-algorithm/tree/master/tree) | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_find)union-find(disjoint set) |	*2020. 04. 06. ~ 04. 26.*
+| [05](https://github.com/nadarm/42-algorithm/tree/master/tree) | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_find)union-find(disjoint set) |	*2020. 04. 06. ~ 05. 15.*
 |||||
-| [06](https://github.com/nadarm/42-algorithm/tree/master/sort) | [__Sort__](/06_sort)  |  [__1)__ ](/06_sort/1_bubble_sort)bubble sort [__2)__ ](/06_sort/2_heap_sort)heap sort [__3)__ ](/06_sort/3_quick_sort)quick sort [__4)__ ](/06_sort/4_merge_sort)merge sort |	*2020. 05. 11. ~ 05. 17.* |
-| 07 | Hash  | closed | *2020. 05. 18. ~ 05. 24.* |
-| 08 | Graph(shortest path)	| closed | *2020. 05. 25. ~ 05. 31.* |
-| 09 | Graph(MST) | closed | *2020. 06. 01. ~ 06. 07.* |
-| 10 | Brute-Force(DFS, BFS) | closed |	*2020. 06. 08. ~ 06. 14.* |
-| 11 | Dynamic Programming  | closed |	*2020. 06. 15. ~ 06. 21.* |
-| 12 | Greedy Algorithm | closed | *2020. 06. 22. ~ 06. 28.* |
-| 13 | Divide and Conquer | closed | *2020. 06. 29. ~ 07. 05.* |
-| 14 | binary search  | closed | *2020. 07. 06. ~ 07. 12.* |
-| 15 | KMP  | closed | *2020. 07. 13. ~ 07. 19.* |
+| [06](https://github.com/nadarm/42-algorithm/tree/master/sort) | [__Sort__](/06_sort)  |  [__1)__ ](/06_sort/1_bubble_sort)bubble sort [__2)__ ](/06_sort/2_heap_sort)heap sort [__3)__ ](/06_sort/3_quick_sort)quick sort [__4)__ ](/06_sort/4_merge_sort)merge sort |	*2020. 05. 16. ~ 05. 24.* |
+| [07](https://github.com/nadarm/42-algorithm/tree/master/hash) | __Hash__  |  [__1)__ ](/07_hash/1_rabin_karp)Rabin-Karp [__2)__ ](/07_hash/2_hash_set)hash set [__3)__ ](/07_hash/3_hash_map)hash map | *2020. 05. 25. ~ 05. 31.* |
+| 08 | Graph(shortest path)	| closed | *2020. 06. 01. ~ 06. 07.* |
+| 09 | Graph(MST) | closed | *2020. 06. 08. ~ 06. 14.* |
+| 10 | Brute-Force(DFS, BFS) | closed |	*2020. 06. 15. ~ 06. 21.* |
+| 11 | Dynamic Programming  | closed |	*2020. 06. 22. ~ 06. 28.* |
+| 12 | Greedy Algorithm | closed | *2020. 06. 29. ~ 07. 05.* |
+| 13 | Divide and Conquer | closed | *2020. 07. 06. ~ 07. 12.* |
+| 14 | binary search  | closed | *2020. 07. 13. ~ 07. 19.* |
+| 15 | KMP  | closed | *2020. 07. 20. ~ 07. 26* |
