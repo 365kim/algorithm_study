@@ -61,11 +61,12 @@
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
 > 1회 : 실패 <br>
 > 2회 : 실패 <br>
-> 3회 : [시도중](./baekjoon_05052_phone_list.c)
+> 3회 : [성공](./baekjoon_05052_phone_list.c)
 - 연결리스트를 이용한 트라이(10진트리)로 구현
 - consistent 조건
     - nbr을 검사하며 거쳐가는 노드 중에 finish==true인 노드가 있을 경우
     - nbr의 마지막 노드인데 그 노드의 child가 있을 경우
+- 최초 입력되는 테스트 횟수만큼 while문을 돌면서 root를 초기화하지 않고 그대로 사용해서 두번째 테스트부터 결과가 다르게 나오는 문제가 있었음
 <br>
 
 ## [1717번](https://www.acmicpc.net/problem/1717) 집합의 표현

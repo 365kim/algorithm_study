@@ -6,7 +6,7 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/12 17:14:00 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/14 17:27:48 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/15 15:33:37 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ typedef struct s_node
 
 t_node *root[10];
 int    j;
+
+void reset_root(t_node *root[10])
+{
+	for (int i = 0; i < 10; i++)
+		root[i] = NULL;
+}
 
 t_node *activate_node(void)
 {
@@ -75,6 +81,7 @@ int main(void)
 	while (n_test--)
 	{
 		scanf("%d", &n_case);
+		reset_root(root);
 		result = YES;
 		while (n_case--)
 		{
