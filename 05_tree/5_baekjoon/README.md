@@ -80,5 +80,7 @@
 
 ## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크
 > 1-4회 : 시간초과 <br>
-> 5회 : [시도중](./baekjoon_04195_virtual_friends.c)
+> 5회 : 실패 <br>
+> 6회 : [시도중](./baekjoon_04195_virtual_friends.c)
 - 유니온파인드로 구현
+- 시간초과 해결하기 위해 이름(string)탐색에 트라이 적용

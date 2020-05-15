@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 15:47:45 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/25 19:26:15 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/15 17:00:01 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,35 +27,74 @@
 #include <stdlib.h>
 #include <math.h>
 
+# define ALPHABET 52
+# define NONE -1
+
+typedef struct s_node
+{
+	struct s_node *next[ALPHABET];
+	int           index;
+}              t_node;
+
+t_node *root[ALPHABET];
 char name[200001][21];
 int  parent[200000];
 int  size[200000];
 int  n;
 
-int name_to_idx(char input[])
+t_node *activate_node(void)
 {
+	t_node *node;
 	int i = 0;
 
-	while (i < n)
-	{
-		if (strcmp(input, name[i]) == 0)
-			return (i);
-		i++;
-	}
-	strcpy(name[n], input);
-	parent[n] = n;
-	size[n] = 1;
-	return (n++);
+	node = malloc(sizeof(t_node));
+	while (i < ALPHABET)
+		node->next[i++] = NULL;
+	node->index = NONE;
+	return (node);
 }
 
-int find(int i)
+int ft_atoi(char c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (c - 'a');
+	return (c - 'A');
+}
+
+int ft_trie(char *name)
+{
+	int i, j;
+	t_node *curr;
+
+	j = ft_atoi(name[0]);
+	if (root[j] == NULL)
+		root[j] = activate_node();
+	curr = root[j];
+	for (i = 1; name[i]; i++)
+	{
+		j = ft_atoi(name[i]);
+		if (curr->next[j] == NULL)
+			curr->next[j] = activate_node();
+		curr = curr->next[j];
+	}
+	if (curr->index == NONE)
+	{
+		curr->index = n;
+		parent[n] = n;
+		size[n] = 1;
+		n++;
+	}
+	return (curr->index);
+}
+
+int ft_find(int i)
 {
 	if (i == parent[i])
 		return (i);
-	return (parent[i] = find(parent[i]));
+	return (parent[i] = ft_find(parent[i]));
 }
 
-int union_by_size(int a, int b)
+int ft_union(int a, int b)
 {
 	int tmp;
 
@@ -81,14 +120,16 @@ int main(void)
 	scanf("%d", &t);
 	while (t--)
 	{
+		for (int i = 0; i < ALPHABET; i++)
+			root[i] = activate_node();
 		scanf("%d", &f);
 		n = 0;
 		while(f--)
 		{
 			scanf("%s %s", name1, name2);
-			a = name_to_idx(name1);
-			b = name_to_idx(name2);
-			printf("%d\n", union_by_size(find(a), find(b)));
+			a = ft_trie(name1);
+			b = ft_trie(name2);
+			printf("%d\n", ft_union(ft_find(a), ft_find(b)));
 		}
 	}
 	return (0);
