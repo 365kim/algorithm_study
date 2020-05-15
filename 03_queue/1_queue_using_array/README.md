@@ -1,7 +1,6 @@
 ## Queue using Array
 - 배열을 이용한 큐
-- 참고자료
-    - [큐의 개념, 배열로 큐 구현하기](http://blog.naver.com/PostView.nhn?blogId=keloc&logNo=40153556226)
+- 참고자료 : [큐의 개념, 배열로 큐 구현하기](http://blog.naver.com/PostView.nhn?blogId=keloc&logNo=40153556226)
 <br>
 
 ## Nadarm's Exercise
