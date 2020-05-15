@@ -1,7 +1,8 @@
 ## Singly Linked List
 - 단일 연결리스트
-- 참고: [단일 연결리스트 연산과 시간복잡도](https://blog.naver.com/com_sci/221172372843)
-- 참고: [Array관련이야기 - LinkedList](https://blog.naver.com/skyvvv624/220916289329)
+- 참고자료
+    - [단일 연결리스트 연산과 시간복잡도](https://blog.naver.com/com_sci/221172372843)
+    - [Array관련이야기 - LinkedList](https://blog.naver.com/skyvvv624/220916289329)
 <br>
 
 ## 예제
