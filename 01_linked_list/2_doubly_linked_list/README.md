@@ -1,8 +1,7 @@
 ## Doubly Linked List
 - 이중 연결리스트
 - list 구조체에 head와 tail을 넣어줌
-- 참고자료
-    - [자료구조 이중연결리스트](https://blog.naver.com/beaqon/221240197476)
+- 참고자료 : [자료구조 이중연결리스트](https://blog.naver.com/beaqon/221240197476)
 <br>
 
 ## Nadarm's Exercise
