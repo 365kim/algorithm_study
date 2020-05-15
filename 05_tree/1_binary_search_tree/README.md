@@ -3,7 +3,9 @@
     - 노드의 왼쪽 및 오른쪽 subtree는 각각이 또 하나의 이진탐색트리임
     - 노드의 왼쪽 subtree에는 그 노드의 값보다 작은 값들을 가진 노드들로 이루어짐
     - 노드의 오른쪽 subtree에는 그 노드의 값과 크거나 같은 값들을 가진 노드들로 이루어짐
-- 참고자료 : [트리 - 이진탐색트리](https://jocoma.tistory.com/entry/%ED%8A%B8%EB%A6%AC2-%EC%9E%90%EA%B0%80-%EA%B7%A0%ED%98%95-%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC?category=862940)
+- 참고자료
+    - [트리 - 이진탐색트리](https://jocoma.tistory.com/entry/%ED%8A%B8%EB%A6%AC2-%EC%9E%90%EA%B0%80-%EA%B7%A0%ED%98%95-%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC?category=862940)
+    - [MOOC강의 - 이진검색트리 _(1.5배속)_ ](http://www.kocw.net/home/cview.do?lid=6f2f6a48a9d65a80)
 <br>
 
 ## Nadarm's Exercise
