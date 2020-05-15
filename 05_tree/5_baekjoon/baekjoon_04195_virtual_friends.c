@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 15:47:45 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/15 17:00:01 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/15 17:07:54 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,13 @@ int  parent[200000];
 int  size[200000];
 int  n;
 
-t_node *activate_node(void)
+void reset_root(t_node *root[])
+{
+	for (int i = 0; i < ALPHABET; i++)
+		root[i] = NULL;
+}
+
+t_node *init_trie(void)
 {
 	t_node *node;
 	int i = 0;
@@ -68,13 +74,13 @@ int ft_trie(char *name)
 
 	j = ft_atoi(name[0]);
 	if (root[j] == NULL)
-		root[j] = activate_node();
+		root[j] = init_trie();
 	curr = root[j];
 	for (i = 1; name[i]; i++)
 	{
 		j = ft_atoi(name[i]);
 		if (curr->next[j] == NULL)
-			curr->next[j] = activate_node();
+			curr->next[j] = init_trie();
 		curr = curr->next[j];
 	}
 	if (curr->index == NONE)
@@ -120,8 +126,7 @@ int main(void)
 	scanf("%d", &t);
 	while (t--)
 	{
-		for (int i = 0; i < ALPHABET; i++)
-			root[i] = activate_node();
+		reset_root(root);
 		scanf("%d", &f);
 		n = 0;
 		while(f--)
