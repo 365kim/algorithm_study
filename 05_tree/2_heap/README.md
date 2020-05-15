@@ -7,7 +7,9 @@
         
 - 큐 vs 우선순위큐
     - _큐_ 는 우선순위 개념이 없이 FIFO 원칙을 지키지만, _우선순위 큐_ 는 우선순위가 높은 데이터가 먼저 인출됨
-- 참고자료: [우선순위 큐(Priority Queue) - 최대힙 이용](https://velog.io/@holicme7/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90Prioirity-Queue-mbk48cz764)
+- 참고자료
+    - [우선순위 큐(Priority Queue) - 최대힙 이용](https://velog.io/@holicme7/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90Prioirity-Queue-mbk48cz764)
+    - [MOOC강의 - 우선순위큐 _(1.5배속)](http://www.kocw.net/home/cview.do?lid=8351f79dcac6ec98)
 <br>
 
 ## Nadarm's Exercise
