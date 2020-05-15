@@ -80,7 +80,8 @@
 
 ## [4195번](https://www.acmicpc.net/problem/4195) 친구 네트워크
 > 1-4회 : 시간초과 <br>
-> 5회 : 실패 <br>
-> 6회 : [시도중](./baekjoon_04195_virtual_friends.c)
+> 5-6회 : 실패 <br>
+> 7회 : [성공](./baekjoon_04195_virtual_friends.c)
 - 유니온파인드로 구현
 - 시간초과 해결하기 위해 이름(string)탐색에 트라이 적용
+- 67행에서 대문자와 소문자와 같은 int값으로 잘못 반환(`return (c - 'A');`해서 jinny와 Jinny가 같은 값으로 인식되는 문제가 있었음

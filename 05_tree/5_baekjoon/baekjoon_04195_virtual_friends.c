@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 15:47:45 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/15 17:07:54 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/15 17:16:38 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int ft_atoi(char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 'a');
-	return (c - 'A');
+	return (c - 'A' + 26);
 }
 
 int ft_trie(char *name)
