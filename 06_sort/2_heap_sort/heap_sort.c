@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/16 14:52:02 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/16 16:58:28 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/17 08:21:53 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,11 @@ void swap(void **a, void **b)
 
 void adjust_index(void **items, void **item, int size, int order)
 {
-	for (int i = 0; i < size; i++)
-		if (order == 1)
+	if (order == 1)
+		for (int i = 0; i < size; i++)
 			item[i + 1] = items[i];
-		else
+	else
+		for (int i = 0; i < size; i++)
 			items[i] = item[i + 1];
 }
 
