@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/17 17:38:39 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/17 18:22:40 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/19 17:21:36 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,40 +19,34 @@ void swap(void **a, void **b)
 	*b = temp;
 }
 
-int make_partition(void **items, int start, int end, int (*cmp)(void *, void *))
+void do_quick_sort(void **items, int start, int end, int (*cmp)(void *, void *))
 {
-	void *pivot;
-		
-	pivot = items[(start + end) / 2];
-	while (start <= end)
+	int i = start;
+	int j = end;
+	void *pivot = items[(start + end) / 2];
+	int tmp;
+
+	while (i <= j)
 	{
-		while (cmp(items[start], pivot) < 0)
-			start++;
-		while (cmp(items[end], pivot) > 0)
-			end--;
-		if (start <= end)
+		while (cmp(items[i], pivot) < 0)
+			i++;
+		while (cmp(items[j], pivot) > 0)
+			j--;
+		if (i <= j)
 		{
-			swap(&items[start], &items[end]);
-			start++;
-			end--;
+			swap(&items[i], &items[j]);
+			i++;
+			j--;
 		}
 	}
-	return (start);
-}
-
-void repeat_recursively(void **items, int start, int end, int (*cmp)(void *, void *))
-{
-	int p;
-	
-	p = make_partition(items, start, end, cmp);
-	if (start < p - 1)
-		repeat_recursively(items, start, p - 1, cmp);
-	if (p < end)
-		repeat_recursively(items, p, end, cmp);
+	if (start < j)
+		do_quick_sort(items, start, j, cmp);
+	if (i < end)
+		do_quick_sort(items, i, end, cmp);
 }
 
 int quick_sort(void **items, int size, int (*cmp)(void *, void *))
 {
-	repeat_recursively(items, 0, size - 1, cmp);
+	do_quick_sort(items, 0, size - 1, cmp);
 	return (1);
 }
