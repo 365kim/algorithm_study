@@ -19,7 +19,10 @@
 <br>
 
 ## [1427번](https://www.acmicpc.net/problem/1427) 소트인사이드
-> 1회 : 
+> 1회 : 실패
+> 2회 : [성공](./baekjoon_01427_sort_inside.c)
+- 자연수를 문자형 배열로 받고 stdlib.h의 qsort()함수를 이용해서 숫자 내에서 자릿수를 내림차순으로 정렬
+- qsort()에 넣어주는 compare()함수를 오름차순으로 잘못짜서 1번 실패
 <br>
 
 ## [1181번](https://www.acmicpc.net/problem/1181) 단어 정렬
