@@ -26,7 +26,8 @@
 <br>
 
 ## [1181번](https://www.acmicpc.net/problem/1181) 단어 정렬
-> 1회 : 
+> 1회 : 시간초과
+> 2회 : [시도중](./baekjoon_01181_word_sorting.c)
 <br>
 
 ## [10814번](https://www.acmicpc.net/problem/10814) 나이순 정렬
