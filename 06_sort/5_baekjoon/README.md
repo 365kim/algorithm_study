@@ -26,8 +26,9 @@
 <br>
 
 ## [1181번](https://www.acmicpc.net/problem/1181) 단어 정렬
-> 1회 : 시간초과
-> 2회 : [시도중](./baekjoon_01181_word_sorting.c)
+> 1-3회 : 시간초과<br>
+> 4회 : [성공](./baekjoon_01181_word_sorting.c)
+> 시간복잡도 O(n^2)의 버블정렬로 구현해서 시간초과 발생, 퀵정렬 사용해서 해결
 <br>
 
 ## [10814번](https://www.acmicpc.net/problem/10814) 나이순 정렬

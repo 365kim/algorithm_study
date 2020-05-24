@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/22 21:12:53 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/22 21:47:15 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/24 15:15:35 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,19 @@
 
 char word[20001][51];
 
-void swap(char *a, char *b)
+int compare(const void *pa, const void *pb)
 {
-	char temp[51];
+	int a;
+	int b;
 
-	strcpy(temp, a);
-	strcpy(a, b);
-	strcpy(b, temp);
+	a = strlen(pa);
+	b = strlen(pb);
+	if (a > b)
+		return (1);
+	else if (a == b)
+		return (strcmp((char *)pa, (char *)pb));
+	else
+		return (-1);
 }
 
 int main(void)
@@ -30,25 +36,16 @@ int main(void)
 	int size;
 	int i, j;
 	int a, b;
-	char temp[51];
+	char *temp;
 
 	scanf("%d", &size);
 	for (i = 0; i < size; i++)
-		scanf("%s", word[i]);
-	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size - 1; j++)
-		{
-			a = strlen(word[j]);
-			b = strlen(word[j + 1]);
-			if (a > b)
-				swap(word[j], word[j + 1]);
-			else if (a == b && strcmp(word[j], word[j + 1]) > 0)
-				swap(word[j], word[j + 1]);
-		}
+		scanf("%s", word[i]);
 	}
+	qsort(word, size, sizeof(word[0]), compare);
 	printf("%s\n", word[0]);
-	strcpy(temp, word[0]);
+	temp = word[0];
 	for (i = 1; i < size; i++)
 	{
 		if (strcmp(word[i], temp) == 0)
@@ -56,7 +53,7 @@ int main(void)
 		else
 		{
 			printf("%s\n", word[i]);
-			strcpy(temp, word[i]);
+			temp = word[i];
 		}
 	}
 	return (0);
