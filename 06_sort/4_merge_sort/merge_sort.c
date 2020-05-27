@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 17:28:57 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/19 18:03:36 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/27 17:25:47 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void do_merge_sort(void **items, int start, int end, int (*cmp)(void *, void *),
 			note[k++] = items[i++];
 		else if (i > mid)
 			note[k++] = items[j++];
-		else if (cmp(items[i], items[j]) < 0)
+		else if (cmp(items[i], items[j]) <= 0)
 			note[k++] = items[i++];
 		else
 			note[k++] = items[j++];
