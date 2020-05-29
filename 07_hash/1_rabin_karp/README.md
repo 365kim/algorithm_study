@@ -31,8 +31,10 @@
 ## Nadarm's Exercise
 - [예제 원본](https://github.com/nadarm/42-algorithm/tree/master/hash/rabin_karp)
 
-#### 정렬구현
-- 관련예제 : [get_hash](./get_hash.c), [find_str](./find_str.c)
+-  __라빈카프 구현__
+    - [get_hash_value](./get_hash.c) : 해시함수 적용해서 hash값 반환
+    - [find_str](./find_str.c) : 라빈카프 알고리즘으로 문자열 검사
+    - [header](./rabin_karp.h) : base와 modulo의 operand를 define해둠, struct에 len과 hash를 담음
 <br>
 
 [맨 위로](#rabin-karp)
