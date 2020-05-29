@@ -39,4 +39,4 @@
     |:---|:---|:---|:---|:---|
     ||||||
     | 　 | *2020. 07. 20. ~ 07. 26.* | *2020. 07. 27. ~ 08. 02.* | 　　　　　　　　　　 |　　　　　　　　　　|
-    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |  |
+    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |  |  |
