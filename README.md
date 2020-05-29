@@ -17,29 +17,26 @@
 ### :memo: Contents
 - Curriculum designed by [**nadarm**](https://github.com/nadarm/42-algorithm)
 
-| Collection of Problems <br>　  | __01__ <br> [__Linked List__](https://github.com/nadarm/42-algorithm/tree/master/linked_list#linked-list) | __02__ <br> [__Stack__](https://github.com/nadarm/42-algorithm/tree/master/stack#stack) | __03__ <br> [__Queue__](https://github.com/nadarm/42-algorithm/tree/master/queue#queue) | __04__ <br> [__Deque__](https://github.com/nadarm/42-algorithm/tree/master/deque#deque) |
-|:---|:---|:---|:---|:---|
-||||||
-|  | *2020 . 03 .02. ~ 03. 08.*  | *2020. 03. 09. ~ 03. 22.* | *2020. 03. 23. ~ 03. 29.* | *2020. 03. 30. ~ 04. 05.* |
-| 　 |  [__01 Topic Study__ ](/01_linked_list#1-linked-list) <br><br> [__01-1__ ](/01_linked_list/1_singly_linked_list)singly linked list <br> [__01-2__ ](/01_linked_list/2_doubly_linked_list)doubly linked list <br> [__01-3__ ](/01_linked_list/3_circular_linked_list)circular linked list<br> [__01-4__ ](/01_linked_list/4_baekjoon)baekjoon | [__02 Topic Study__ ](/02_stack#2-stack) <br><br>[__02-1__ ](/02_stack/1_stack_using_array)using array<br>  [__02-2__ ](/02_stack/2_stack_using_linked_list)using linked list<br> [__02-3__ ](/02_stack/3_baekjoon)baekjoon <br> <br> |  [__03 Topic Study__ ](/03_queue#3-queue) <br><br> [__03-1__ ](/03_queue/1_queue_using_array)using array <br> [__03-2__ ](/03_queue/2_queue_using_linked_list)using linked list <br> [__03-3__ ](/03_queue/3_baekjoon)baekjoon <br> <br> |  [__04 Topic Study__ ](/04_deque#4-deque) <br><br>[__04-1__ ](/04_deque/1_deque_using_linked_list)using linked list <br> [__04-2__ ](/04_deque/2_baekjoon)baekjoon <br><br><br>|
-<br>
+    | Collection of　 <br>Problems　  | __01__ <br> [__Linked List__](https://github.com/nadarm/42-algorithm/tree/master/linked_list#linked-list) | __02__ <br> [__Stack__](https://github.com/nadarm/42-algorithm/tree/master/stack#stack) | __03__ <br> [__Queue__](https://github.com/nadarm/42-algorithm/tree/master/queue#queue) | __04__ <br> [__Deque__](https://github.com/nadarm/42-algorithm/tree/master/deque#deque) |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020 . 03 .02. ~ 03. 08.*  | *2020. 03. 09. ~ 03. 22.* | *2020. 03. 23. ~ 03. 29.* | *2020. 03. 30. ~ 04. 05.* |
+    | 　 |  [__01 Topic Study__ ](/01_linked_list#1-linked-list) <br><br> [__01-1__ ](/01_linked_list/1_singly_linked_list)singly linked list <br> [__01-2__ ](/01_linked_list/2_doubly_linked_list)doubly linked list <br> [__01-3__ ](/01_linked_list/3_circular_linked_list)circular linked list<br> [__01-4__ ](/01_linked_list/4_baekjoon)baekjoon | [__02 Topic Study__ ](/02_stack#2-stack) <br><br>[__02-1__ ](/02_stack/1_stack_using_array)using array<br>  [__02-2__ ](/02_stack/2_stack_using_linked_list)using linked list<br> [__02-3__ ](/02_stack/3_baekjoon)baekjoon <br> <br> |  [__03 Topic Study__ ](/03_queue#3-queue) <br><br> [__03-1__ ](/03_queue/1_queue_using_array)using array <br> [__03-2__ ](/03_queue/2_queue_using_linked_list)using linked list <br> [__03-3__ ](/03_queue/3_baekjoon)baekjoon <br> <br> |  [__04 Topic Study__ ](/04_deque#4-deque) <br><br>[__04-1__ ](/04_deque/1_deque_using_linked_list)using linked list <br> [__04-2__ ](/04_deque/2_baekjoon)baekjoon <br><br><br>|
+    
+    | Collection of　 <br>Problems　 | __05__ <br> [__Tree__](https://github.com/nadarm/42-algorithm/tree/master/tree#tree) | __06__ <br> [__Sort__](https://github.com/nadarm/42-algorithm/tree/master/sort#sort) | __07__ <br> [__Hash__](https://github.com/nadarm/42-algorithm/tree/master/hash#hash) | __08__ <br> [__Graph__](https://github.com/nadarm/42-algorithm/tree/master/graph#graph) |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 04. 06. ~ 05. 15.* | *2020. 05. 16. ~ 05. 27.* | *2020. 05. 28. ~ 06. 07.* | *2020. 06. 08. ~ 06. 21.* |
+    | 　 |[__05 Topic Study__ ](/05_tree#5-tree) <br><br>[__05-1__ ](/05_tree/1_binary_search_tree)binary search tree <br> [__05-2__ ](/05_tree/2_heap)heap <br> [__05-3__ ](/05_tree/3_trie)trie <br> [__05-4__ ](/05_tree/4_union_find)union-find<br> [__05-5__ ](/05_tree/5_baekjoon)baekjoon | [__06 Topic Study__ ](/06_sort#6-sort) <br><br> [__06-1__ ](/06_sort/1_bubble_sort)bubble sort <br> [__06-2__ ](/06_sort/2_heap_sort)heap sort <br> [__06-3__ ](/06_sort/3_quick_sort)quick sort <br> [__06-4__ ](/06_sort/4_merge_sort)merge sort<br> [__06-5__ ](/06_sort/5_baekjoon)baekjoon | [__07 Topic Study__ ](/07_hash#7-hash) <br><br> [__07-1__ ](/07_hash/1_rabin_karp)rabin-karp <br> [__07-2__ ](/07_hash/2_hash_set)hash set <br> [__07-3__ ](/07_hash/3_hash_map)hash map<br> [__07-4__ ](/07_hash/4_baekjoon)baekjoon <br><br> | closed <br><br><br><br><br><br><br> |
 
-| Collection of Problems<br>　 | __05__ <br> [__Tree__](https://github.com/nadarm/42-algorithm/tree/master/tree#tree) | __06__ <br> [__Sort__](https://github.com/nadarm/42-algorithm/tree/master/sort#sort) | __07__ <br> [__Hash__](https://github.com/nadarm/42-algorithm/tree/master/hash#hash) | __08__ <br> [__Graph__](https://github.com/nadarm/42-algorithm/tree/master/graph#graph) |
-|:---|:---|:---|:---|:---|
-||||||
-| 　 |*2020. 04. 06. ~ 05. 15.* | *2020. 05. 16. ~ 05. 24.* | *2020. 05. 25. ~ 05. 31.* | *2020. 06. 01. ~ 06. 07.* |
-|  <br><br><br><br><br><br> |[__05 Topic Study__ ](/05_tree#5-tree) <br><br>[__05-1__ ](/05_tree/1_binary_search_tree)binary search tree <br> [__05-2__ ](/05_tree/2_heap)heap <br> [__05-3__ ](/05_tree/3_trie)trie <br> [__05-4__ ](/05_tree/4_union_find)union-find<br> [__05-5__ ](/05_tree/5_baekjoon)baekjoon | [__06 Topic Study__ ](/06_sort#6-sort) <br><br> [__06-1__ ](/06_sort/1_bubble_sort)bubble sort <br> [__06-2__ ](/06_sort/2_heap_sort)heap sort <br> [__06-3__ ](/06_sort/3_quick_sort)quick sort <br> [__06-4__ ](/06_sort/4_merge_sort)merge sort<br> [__06-5__ ](/06_sort/5_baekjoon)baekjoon | [__07 Topic Study__ ](/07_hash#7-hash) <br><br> [__07-1__ ](/07_hash/1_rabin_karp)rabin-karp <br> [__07-2__ ](/07_hash/2_hash_set)hash set <br> [__07-3__ ](/07_hash/3_hash_map)hash map<br> [__07-4__ ](/07_hash/4_baekjoon)baekjoon <br><br> | closed <br><br><br><br><br><br><br> |
-<br>
+    | Collection of　 <br>Problems　| __09__ <br>  __Brute-Force__ |__10__ <br> __Dynamic Programming__ | __11__ <br> __Greedy Algorithm__ | __12__ <br> __Divide and Conquer__ |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 06. 22. ~ 06. 28..* | *2020. 06. 29. ~ 07. 05.* | *2020. 07. 06. ~ 07. 12.* | *2020. 07. 13. ~ 07. 19.* |
+    | 　 | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> |
 
-| Collection of Problems<br>　| __09__ <br> __Graph(MST)__ |__10__ <br> __Brute-Force__ | __11__ <br> __Dynamic Programming__ | __12__ <br> __Greedy Algorithm__ |
-|:---|:---|:---|:---|:---|
-||||||
-|  |*2020. 06. 08. ~ 06. 14.* |*2020. 06. 15. ~ 06. 21.* |*2020. 06. 22. ~ 06. 28.* |*2020. 06. 29. ~ 07. 05.* |
-| 　 | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> |
-<br>
-
-| Collection of Problems<br>　|  __13__ <br> __Divide and Conquer__ | __14__ <br> __Binary Search__ | __15__ <br> __KMP__ |　　　　　|
-|:---|:---|:---|:---|:---|
-||||||
-|  |*2020. 07. 06. ~ 07. 12.* | *2020. 07. 13. ~ 07. 19.* |*2020. 07. 20. ~ 07. 26* |　　　　　　　　　　|
-|　| closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> |  |
+    | Collection of　 <br>Problems　|  __13__ <br> __Binary Search__ | __14__ <br> __KMP__| 　　　　　 |　　　　　|
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 07. 20. ~ 07. 26* | *2020. 07. 27. ~ 08. 02* | 　　　　　　　　　　 |　　　　　　　　　　|
+    | 　 | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> | closed <br><br><br><br><br><br> |  |
