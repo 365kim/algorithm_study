@@ -2,9 +2,8 @@
 - 문자열 비교 알고리즘
     - 전체문자열 `haystack` 안에 특정문자열 `needle` 이 있는지 hash값을 비교해서 검사
     - _예시)_ 전체 "abccefghabcd" 중에 특정 "abcd"이 있는지 검사
-- __해시함수__
-    - _Rabin fingerprint_ <br>
-        <p><img src="https://user-images.githubusercontent.com/60066472/83149712-64850800-a135-11ea-84af-749dca6aa436.png" width="600"></p>  
+- __해시함수__ : _Rabin fingerprint_ <br>
+    <p><img src="https://user-images.githubusercontent.com/60066472/83149712-64850800-a135-11ea-84af-749dca6aa436.png" width="600"></p>  
     
     - hash충돌을 최소화하기 위한 장치
         - modulo의 operand는 범위 내 최대한 큰 소수로 사용
