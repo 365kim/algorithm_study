@@ -6,12 +6,11 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 11:29:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/31 15:37:28 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/31 15:42:30 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rabin_karp.h"
-#include <stdio.h>
 
 static long long	ft_exp(int base, int power)
 {

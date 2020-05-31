@@ -1,8 +1,6 @@
-## Data Sturcture & Algorithm Study
+## Data Sturcture & Algorithm
 
-### :runner: Mento  : [**nadarm**](https://github.com/nadarm/42-algorithm) (aka jko)
-### :runner: Mentee : [**365kim**](https://github.com/365kim/study_with_jko), [**robolovo**](https://github.com/robolovo)
----
+### :runner: Study Mento  : [**nadarm**](https://github.com/nadarm/42-algorithm) (aka jko)
 
 ### :memo: Definition
 - `자료구조` : 데이터를 효율적으로 이용할 수 있도록 컴퓨터에 저장하는 방법
@@ -16,25 +14,29 @@
     - 시간복잡도 _(cpu)_ 가 공간복잡도 _(memory)_ 보다 중요
 ---
 
-
 ### :memo: Contents
 - Curriculum designed by [**nadarm**](https://github.com/nadarm/42-algorithm)
 
-| Chapter | Topic | Subtopics | Schedule | 
-|:---:|:---|:---|:---|
-| [01](https://github.com/nadarm/42-algorithm/tree/master/linked_list) | [__Linked List__](/01_linked_list) | [__1)__ ](/01_linked_list/1_singly_linked_list)singly linked list [__2)__ ](/01_linked_list/2_doubly_linked_list)doubly linked list [__3)__ ](/01_linked_list/3_circular_linked_list)circular linked list | *2020 . 03 .02. ~ 03. 08.*  | 
-| [02](https://github.com/nadarm/42-algorithm/tree/master/stack) | [__Stack__](/02_stack) | [__1)__ ](/02_stack/1_stack_using_array)using array [__2)__ ](/02_stack/2_stack_using_linked_list)using linked list |	*2020. 03. 09. ~ 03. 22.* |
-| [03](https://github.com/nadarm/42-algorithm/tree/master/queue) | [__Queue__](/03_queue) | [__1)__ ](/03_queue/1_queue_using_array)using array [__2)__ ](/03_queue/2_queue_using_linked_list)using linked list	| *2020. 03. 23. ~ 03. 29.*
-| [04](https://github.com/nadarm/42-algorithm/tree/master/deque) | [__Deque__](/04_deque) | [__1)__ ](/04_deque/1_deque_using_linked_list)using linked list	| *2020. 03. 30. ~ 04. 05.*
-| [05](https://github.com/nadarm/42-algorithm/tree/master/tree) | [__Tree__](/05_tree) | [__1)__ ](/05_tree/1_binary_search_tree)binary search tree [__2)__ ](/05_tree/2_heap)heap(priority queue) [__3)__ ](/05_tree/3_trie)trie <br> [__4)__ ](/05_tree/4_union_find)union-find(disjoint set) |	*2020. 04. 06. ~ 05. 15.*
-|||||
-| [06](https://github.com/nadarm/42-algorithm/tree/master/sort) | [__Sort__](/06_sort)  |  [__1)__ ](/06_sort/1_bubble_sort)bubble sort [__2)__ ](/06_sort/2_heap_sort)heap sort [__3)__ ](/06_sort/3_quick_sort)quick sort [__4)__ ](/06_sort/4_merge_sort)merge sort |	*2020. 05. 16. ~ 05. 24.* |
-| [07](https://github.com/nadarm/42-algorithm/tree/master/hash) | __Hash__  |  [__1)__ ](/07_hash/1_rabin_karp)Rabin-Karp [__2)__ ](/07_hash/2_hash_set)hash set [__3)__ ](/07_hash/3_hash_map)hash map | *2020. 05. 25. ~ 05. 31.* |
-| 08 | Graph(shortest path)	| closed | *2020. 06. 01. ~ 06. 07.* |
-| 09 | Graph(MST) | closed | *2020. 06. 08. ~ 06. 14.* |
-| 10 | Brute-Force(DFS, BFS) | closed |	*2020. 06. 15. ~ 06. 21.* |
-| 11 | Dynamic Programming  | closed |	*2020. 06. 22. ~ 06. 28.* |
-| 12 | Greedy Algorithm | closed | *2020. 06. 29. ~ 07. 05.* |
-| 13 | Divide and Conquer | closed | *2020. 07. 06. ~ 07. 12.* |
-| 14 | binary search  | closed | *2020. 07. 13. ~ 07. 19.* |
-| 15 | KMP  | closed | *2020. 07. 20. ~ 07. 26* |
+    | Collection of　 <br>Problems　  | __01__ <br> [__Linked List__](https://github.com/nadarm/42-algorithm/tree/master/linked_list#linked-list) | __02__ <br> [__Stack__](https://github.com/nadarm/42-algorithm/tree/master/stack#stack) | __03__ <br> [__Queue__](https://github.com/nadarm/42-algorithm/tree/master/queue#queue) | __04__ <br> [__Deque__](https://github.com/nadarm/42-algorithm/tree/master/deque#deque) |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020 . 03 .02. ~ 03. 08.*  | *2020. 03. 09. ~ 03. 22.* | *2020. 03. 23. ~ 03. 29.* | *2020. 03. 30. ~ 04. 05.* |
+    | 　 |  [__01 Topic Study__ ](/01_linked_list#1-linked-list) <br><br> [__01-1__ ](/01_linked_list/1_singly_linked_list)singly linked list <br> [__01-2__ ](/01_linked_list/2_doubly_linked_list)doubly linked list <br> [__01-3__ ](/01_linked_list/3_circular_linked_list)circular linked list<br><br> [__+ baekjoon (2)__ ](/01_linked_list/4_baekjoon) | [__02 Topic Study__ ](/02_stack#2-stack) <br><br>[__02-1__ ](/02_stack/1_stack_using_array)using array<br>  [__02-2__ ](/02_stack/2_stack_using_linked_list)using linked list<br><br><br> [__+ baekjoon (5)__ ](/02_stack/3_baekjoon)  |  [__03 Topic Study__ ](/03_queue#3-queue) <br><br> [__03-1__ ](/03_queue/1_queue_using_array)using array <br> [__03-2__ ](/03_queue/2_queue_using_linked_list)using linked list <br><br><br> [__+ baekjoon(3)__ ](/03_queue/3_baekjoon)  |  [__04 Topic Study__ ](/04_deque#4-deque) <br><br>[__04-1__ ](/04_deque/1_deque_using_linked_list)using linked list <br><br><br><br> [__+ baekjoon(3)__ ](/04_deque/2_baekjoon)|
+    
+    | Collection of　 <br>Problems　 | __05__ <br> [__Tree__](https://github.com/nadarm/42-algorithm/tree/master/tree#tree) | __06__ <br> [__Sort__](https://github.com/nadarm/42-algorithm/tree/master/sort#sort) | __07__ <br> [__Hash__](https://github.com/nadarm/42-algorithm/tree/master/hash#hash) | __08__ <br> [__Graph__](https://github.com/nadarm/42-algorithm/tree/master/graph#graph) |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 04. 06. ~ 05. 15.* | *2020. 05. 16. ~ 05. 27.* | *2020. 05. 28. ~ 06. 07.* | *2020. 06. 08. ~ 06. 21.* |
+    | 　 |[__05 Topic Study__ ](/05_tree#5-tree) <br><br>[__05-1__ ](/05_tree/1_binary_search_tree)BST <br> [__05-2__ ](/05_tree/2_heap)heap <br> [__05-3__ ](/05_tree/3_trie)trie <br> [__05-4__ ](/05_tree/4_union_find)union-find<br><br> [__+ baekjoon (11)__ ](/05_tree/5_baekjoon) | [__06 Topic Study__ ](/06_sort#6-sort) <br><br> [__06-1__ ](/06_sort/1_bubble_sort)bubble sort <br> [__06-2__ ](/06_sort/2_heap_sort)heap sort <br> [__06-3__ ](/06_sort/3_quick_sort)quick sort <br> [__06-4__ ](/06_sort/4_merge_sort)merge sort <br><br> [__+ baekjoon (6)__ ](/06_sort/5_baekjoon) | [__07 Topic Study__ ](/07_hash#7-hash) <br><br> [__07-1__ ](/07_hash/1_rabin_karp)rabin-karp <br> [__07-2__ ](/07_hash/2_hash_set)hash set <br> [__07-3__ ](/07_hash/3_hash_map)hash map <br><br><br> [__+ baekjoon (7)__ ](/07_hash/4_baekjoon)  | _closed_ <br><br><br><br><br><br><br><br> |
+
+    | Collection of　 <br>Problems　| __09__ <br>  __Brute-Force__ |__10__ <br> __Dynamic Programmin__ | __11__ <br> __Greedy Algorithm__ | __12__ <br> __Divide and Conquer__ |
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 06. 22. ~ 06. 28.* | *2020. 06. 29. ~ 07. 05.* | *2020. 07. 06. ~ 07. 12.* | *2020. 07. 13. ~ 07. 19.* |
+    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |
+
+    | Collection of　 <br>Problems　|  __13__ <br> __Binary Search__ | __14__ <br> __KMP__| 　　　　　 |　　　　　|
+    |:---|:---|:---|:---|:---|
+    ||||||
+    | 　 | *2020. 07. 20. ~ 07. 26.* | *2020. 07. 27. ~ 08. 02.* | 　 　 　 　　　　　　 | 　 　 　 　　　　　　 |
+    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |  |  |
