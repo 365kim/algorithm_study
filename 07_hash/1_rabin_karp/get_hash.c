@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 11:29:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/29 13:37:55 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/31 20:10:43 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ long long	get_hash(const char *str, unsigned int len)
 	while (i < len)
 	{
 		hash = (hash * BASE) + str[i];
-		hash = hash % OPERAND;
+		hash = hash % BIG_PRIME;
 		i++;
 	}
 	return (hash);

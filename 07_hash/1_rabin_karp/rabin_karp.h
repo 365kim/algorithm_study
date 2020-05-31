@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 11:29:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/31 15:02:34 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/31 20:08:56 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <string.h>
 
 # define BASE 302
-# define OPERAND 1000000007
+# define BIG_PRIME 1000000007
 
 typedef struct	s_struct
 {
