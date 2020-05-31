@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 11:29:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/31 15:42:30 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/05/31 15:43:52 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ static long long	ft_exp(int base, int power)
 	long long	res;
 	int			i;
 
-	if (power == 0)
-		return (1);
-	i = 1;
-	res = base;
+	i = 0;
+	res = 1;
 	while (i < power)
 	{
 		res *= base;
