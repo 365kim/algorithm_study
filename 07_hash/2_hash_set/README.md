@@ -1,10 +1,18 @@
 ## Hash Set
-- 해시셋이 뭘까요
-- 알고리즘
-1. 설명을
-2. 쓰고싶지만
+- 집합의 값을 해시함수로 구한 hash값의 위치에 저장하는 자료구조
+- __해시셋 vs 해시맵__
+    - Hash __Set__
+        - 말 그대로 집합
+        - HashSet은 단일 Null 값을 허용하고, 요소(data)의 중복을 허용하지 않음
+        - e.g. {1, 2, 3, 4, 5}        
+    - Hash __Map__
+        - key값과 그에 연관된 value값을 하나의 dictionary pair를 요소로 함 (key, value)
+        - HashMap은 단일 Null key값과 복수의 Null value 값을 허용함. 
+        - 첫번째요소(key)의 중복을 허용하지 않지만, 두번째요소(value)의 중복은 허용함
+        - e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
+
 - __참고자료__
-    - 검색능력이 부족하네요 더 찾아봅시다
+    - [Difference between HashSet and HashMap](https://stackoverflow.com/questions/2773824/difference-between-hashset-and-hashmap)
 <br>
 
 ## Nadarm's Exercise
