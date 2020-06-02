@@ -1,5 +1,6 @@
 ## [15829번](https://www.acmicpc.net/problem/15829) Hashing
-> 1회 : 
+> 1회 : [성공](./baekjoon_15829_hashing.c)
+- 문제에서 제시한 라빈카프 알고리즘을 이용해서 구현 (BASE 31, BIG PRIME 1234567891)
 <br>
 
 ## [7785번](https://www.acmicpc.net/problem/7785) 회사에 있는 사람
