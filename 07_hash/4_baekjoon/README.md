@@ -14,12 +14,14 @@
 ## [1920번](https://www.acmicpc.net/problem/1920) 수 찾기
 > 1회 : 런타임에러<br>
 > 2회 : [성공](./baekjoon_01920_find_number.c)
-- 한 달전 이진탐색으로 [구현](../../05tree/4_baekjoon/baekjoon_01920_find_number.c)했던 문제를 해시셋으로 구현
+- 한 달전 [이진탐색](../../05_tree/4_baekjoon/baekjoon_01920_find_number.c)으로 구현했던 문제를 해시셋으로 구현
 - get_hash() 함수에서 int형 data를 long long형으로 형변환해준 뒤  연산을 시작하게 해서 런타임에러 해결
 <br>
 
 ## [14425번](https://www.acmicpc.net/problem/14425) 문자열 집합
-> 1회 : 
+> 1회 : [성공](./baekjoon_14425_string_set.c)
+- 한 달전 [트라이](../../05_tree/4_baekjoon/baekjoon_14425_string_set.c)으로 구현했던 문제를 해시셋으로 구현
+- 제출한 코드 기준, 해시로 구현했을 때가 트라이로 구현했을 때보다 약 8배 빠른 성능이 나옴
 <br>
 
 ## [1764번](https://www.acmicpc.net/problem/1764) 듣보잡
