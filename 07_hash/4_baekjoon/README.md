@@ -31,7 +31,9 @@
 <br>
 
 ## [5052번](https://www.acmicpc.net/problem/5052) 전화번호 목록
-> 1회 : 
+> 1회 : 실패<br>
+> 2회 : [성공](./baekjoon_05052_contact_numbers.c)
+- 911234 다음에 911이 입력되었을 때 일관성이 있는 것으로 잘못 판단해서 실패함
 <br>
 
 ## [1786번](https://www.acmicpc.net/problem/1786) 찾기
