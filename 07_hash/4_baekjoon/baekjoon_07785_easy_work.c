@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/02 15:51:33 by mihykim           #+#    #+#             */
-/*   Updated: 2020/06/03 18:43:21 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/06/05 13:19:26 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,10 @@ void	delete_name_with_hash(char *name, long hash)
 	while (curr)
 	{
 		if (strcmp(curr->name, name) == 0)
+		{
 			curr->name[0] = '\0';
+			return ;
+		}
 		curr = curr->next;
 	}
 }
