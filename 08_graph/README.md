@@ -1,29 +1,24 @@
 ## 8. Graph
 - 그래프란
 
-### [8.1.](./1_undirected_adjacency_matrix) **Undirected Graph(adjacency matrix)**
+### [8.1.](./1_undirected_matrix) **Undirected Graph(adjacency matrix)**
 - 무방향 그래프(인접행렬)
 
-### [8.2.](./2_undirected_adjacency_list) **Undirected Graph(adjacency list)**
+### [8.2.](./2_undirected_list) **Undirected Graph(adjacency list)**
 - 무방향 그래프(인접리스트)
 
-### [8.3.](./3_directed_adjacency_list) **Directed Graph(adjacency list)**
+### [8.3.](./3_directed_list) **Directed Graph(adjacency list)**
 - 방향 그래프(인접리스트)
 
-### [8.4.](./4_mst_kruskal) **MST - Kruskal**
-- 최소신장트리 - 크루스칼 알고리즘
+### [8.4.](./4_mst) **MST(Minimum Spanning Tree)**
+1. 크루스칼(kruskal) 알고리즘
+2. 프림(prim) 알고리즘
 
-### [8.5.](./5_mst_prim) **MST - Prim**
-- 최소신장트리 - 프림 알고리즘
+### [8.5.](./5_shortest_path) **Shortest Path**
+1. 다익스트라(Dijkstra) 알고리즘
+2. 벨먼-포드(Bellman-Ford) 알고리즘
+3. 플로이드-워셜(Floyd-Warshall) 알고리즘
 
-### [8.6.](./6_shortest_path_dijkstra) **Shortest Path - Dijkstra**
-- 최단경로 - 다익스트라 알고리즘
-
-### [8.7.](./7_shortest_path_bellman_ford) **Shortest Path - Bellman-Ford**
-- 최단경로 - 벨먼-포드 알고리즘
-
-### [8.8.](./8_shortest_path_floyd_warshall) **Shortest Path - Floyd-Warshall**
-- 최단경로 - 플로이드-워셜 알고리즘
 <br>
 
 ## 생각해보기
