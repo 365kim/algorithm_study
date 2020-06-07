@@ -38,4 +38,6 @@
 <br>
 
 ## [1786번](https://www.acmicpc.net/problem/1786) 찾기
-> 1회 : 
+> 1-2회 : 시간초과<br> 
+> 3회 : [시도중](./baekjoon_01786_finding.c)
+
