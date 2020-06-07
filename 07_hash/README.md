@@ -37,14 +37,30 @@
                 - Double Hashing : 다른 hash function을 한번 더 적용해서 저장
 <br>
 
-- :speech_balloon: ***map(table, dictionary), set 자료구조란?***
-    - hash map, tree map, hash set, tree set 자료구조의 비교
-        - 생각생각
-    - array, linked_list, map, set 자료구조의 비교
-        - 생각생각
+- :speech_balloon: ***array, linked_list, tree, hash 자료구조의 비교***
 
-        |　연산　|Aarry<br>　(unsorted)　|Linked<br>　　　list　　　|Aarry<br>　　(sorted)　　|　　　BST　　　<br>(balanced)|:heavy_check_mark:<br>　　　Hash　　　|
-        |:---|:---:|:---:|:---:|:---:|:---:|
-        | __Get()__ |O(n)|O(n)|O(log₂n)|O(log₂n)|O(1)|
-        | __Insert()__ |O(1)|O(1)|O(n)|O(log₂n)|O(1)|
-        | __Remove()__ |O(n)|O(n)|O(n)|O(log₂n)|O(1)|
+    |　구분　|Aarry<br>　(unsorted)　|Linked<br>　　　list　　　|Aarry<br>　　(sorted)　　|　　　BST　　　<br>(balanced)|　　　Hash　　　<br> |
+    |:---:|:---:|:---:|:---:|:---:|:---:|
+    | __탐색연산__ |O(n)|O(n)|O(log₂n)|O(log₂n)| __O(1)__ |
+    | __삽입연산__ |O(1)|O(1)|O(n)|O(log₂n)| __O(1)__ |
+    | __삭제연산__ |O(n)|O(n)|O(n)|O(log₂n)| __O(1)__ |
+<br>
+
+- :speech_balloon: ***set, map(table, dictionary) 자료구조의 비교***
+    - Hash __Set__
+        - Null 값을 가진 원소를 1개 허용함
+        - 요소(data)의 중복을 허용하지 않음
+        - e.g. {1, 2, 3, 4, 5}        
+    - Hash __Map__
+        - key값과 그에 연관된 value값을 하나의 dictionary pair를 요소로 함 (key, value)
+        - Null값을 가진 key 1개와 Null값을 가진 value 복수 개를 허용함
+        - 첫번째요소(key)의 중복을 허용하지 않지만, 두번째요소(value)의 중복은 허용함
+        - e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
+<br>
+        
+- :speech_balloon: ***hash set, tree set, hash map, tree map 자료구조의 비교***
+    - 모두 비선형 자료구조로 분류됨
+    - 해시셋/해시맵(해싱)이 트리셋/트리맵(이진탐색트리)보다 속도가 빠름
+    - 해시셋, 트리셋 모두 중복을 허용하지 않음
+    - 해시셋은 순서가 보장되지 않지만, 트리셋은 삽입순 또는 오름차 순 등으로 정렬할 수 있음
+    - 해시맵은 순서가 보장되지 않지만, 트리맵은 데이터 삽입시 키값을 기준으로 정렬함
