@@ -8,7 +8,7 @@
 
 ## [1021번](https://www.acmicpc.net/problem/1021) 회전하는 덱
 > 1회 : 실패(10866번 코드를 잘못 복사제출) <br>
-> 2회 : 성공
+> 2회 : 성공<br>
 > 3회 : [성공](./baekjoon_01021_rotating_queue.c)
 - 배열을 이용한 덱으로 구현
 - 사용한 연산 : `pop_back_push_front`, `pop_front_push_back`
