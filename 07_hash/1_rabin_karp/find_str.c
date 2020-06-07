@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 11:29:56 by mihykim           #+#    #+#             */
-/*   Updated: 2020/05/31 20:13:46 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/06/07 22:56:37 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char				*find_str(const char *haystack, const char *needle)
 	if (t_needle.hash == t_haystack.hash)
 		return ((char *)haystack);
 	i = 1;
-	while (i + t_needle.len < t_haystack.len)
+	while (i + t_needle.len <= t_haystack.len)
 	{
 		t_haystack.hash = get_next_hash(haystack, t_needle, t_haystack, i);
 		if (t_haystack.hash == t_needle.hash)
