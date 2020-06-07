@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 14:25:11 by mihykim           #+#    #+#             */
-/*   Updated: 2020/04/03 17:14:32 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/06/07 23:36:03 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int deque[300];
+int deque[2500] = {0};
 int idx_front;
 int idx_back;
 int target;
@@ -83,11 +83,11 @@ int	main(void)
 	scanf("%d", &deque_size);
 	while (i < deque_size)
 	{
-		deque[i + 101] = i + 1;
+		deque[i + 1250] = i + 1;
 		i++;
 	}
-	idx_front = 101;
-	idx_back = 101 + deque_size - 1;
+	idx_front = 1250;
+	idx_back = 1250 + deque_size - 1;
 	scanf("%d", &find_size);
 	while (find_size--)
 	{
