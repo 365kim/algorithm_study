@@ -26,17 +26,5 @@
     | Collection of　 <br>Problems　 | __05__ <br> [__Tree__](https://github.com/nadarm/42-algorithm/tree/master/tree#tree) | __06__ <br> [__Sort__](https://github.com/nadarm/42-algorithm/tree/master/sort#sort) | __07__ <br> [__Hash__](https://github.com/nadarm/42-algorithm/tree/master/hash#hash) | __08__ <br> [__Graph__](https://github.com/nadarm/42-algorithm/tree/master/graph#graph) |
     |:---|:---|:---|:---|:---|
     ||||||
-    | 　 | *2020. 04. 06. ~ 05. 15.* | *2020. 05. 16. ~ 05. 27.* | *2020. 05. 28. ~ 06. 07.* | *2020. 06. 08. ~ 07. 05.* |
+    | 　 | *2020. 04. 06. ~ 05. 15.* | *2020. 05. 16. ~ 05. 27.* | *2020. 05. 28. ~ 06. 07.* | *2020. 07. 06. ~ 07. 26.* |
     | 　 |[__05 트리 학습__ ](/05_tree#5-tree) <br><br>[__05-1__ ](/05_tree/1_binary_search_tree)BST <br> [__05-2__ ](/05_tree/2_heap)heap <br> [__05-3__ ](/05_tree/3_trie)trie <br> [__05-4__ ](/05_tree/4_union_find)union-find<br><br><br> [__+ baekjoon (11)__ ](/05_tree/5_baekjoon) | [__06 정렬 학습__ ](/06_sort#6-sort) <br><br> [__06-1__ ](/06_sort/1_bubble_sort)bubble sort <br> [__06-2__ ](/06_sort/2_heap_sort)heap sort <br> [__06-3__ ](/06_sort/3_quick_sort)quick sort <br> [__06-4__ ](/06_sort/4_merge_sort)merge sort <br><br><br> [__+ baekjoon (6)__ ](/06_sort/5_baekjoon) | [__07 해시 학습__ ](/07_hash#7-hash) <br><br> [__07-1__ ](/07_hash/1_rabin_karp)rabin-karp <br> [__07-2__ ](/07_hash/2_hash_set)hash set <br> [__07-3__ ](/07_hash/3_hash_map)hash map <br><br><br><br> [__+ baekjoon (7)__ ](/07_hash/4_baekjoon)  | [__08 그래프 학습__ ](/08_graph#8-graph) <br><br> [__08-1__ ](/08_graph/1_undirected_matrix)undir(matrix) <br> [__08-2__ ](/08_graph/2_undirected_list)undir(list) <br> [__08-3__ ](/08_graph/3_directed_list)dir(list) <br> [__08-4__ ](/08_graph/4_mst)MST <br> [__08-5__ ](/08_graph/5_shortest_path)shortest path <br><br> [__+ baekjoon (13)__ ](/08_graph/6_baekjoon) |
-
-    | Collection of　 <br>Problems　| __09__ <br>  __Brute-Force__ |__10__ <br> __Dynamic Programmin__ | __11__ <br> __Greedy Algorithm__ | __12__ <br> __Divide and Conquer__ |
-    |:---|:---|:---|:---|:---|
-    ||||||
-    | 　 | *2020. 07. 06. ~ 07. 12.* | *2020. 07. 13. ~ 07. 19.* | *2020. 07. 20. ~ 07. 26.* | *2020. 07. 27. ~ 08. 02.* |
-    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |
-
-    | Collection of　 <br>Problems　|  __13__ <br> __Binary Search__ | __14__ <br> __KMP__| 　　　　　 |　　　　　|
-    |:---|:---|:---|:---|:---|
-    ||||||
-    | 　 | *2020. 08. 03. ~ 08. 09.* | *2020. 08. 10. ~ 08. 17.* | 　 　 　 　　　　　　 | 　 　 　 　　　　　　 |
-    | 　 | _closed_ <br><br><br><br><br><br> | _closed_ <br><br><br><br><br><br> |  |  |
