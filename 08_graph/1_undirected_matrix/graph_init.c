@@ -6,17 +6,31 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/13 10:50:38 by mihykim           #+#    #+#             */
-/*   Updated: 2020/06/13 11:14:34 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/04 01:19:34 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "graph.h"
 
-*t_graph *graph_init(unsigned int size)
+static void init_data_and_matrix(t_graph *graph, unsigned int size)
+{
+	unsigned int i, j;
+
+	for (i = 0; i < size; i++)
+	{
+		graph->data[i] = NULL;
+		for (j = 0; j < size; j++)
+		{
+			graph->matrix[i][j] = false;
+		}
+	}
+}
+
+t_graph *graph_init(unsigned int size)
 {
 	t_graph *graph;
 
-	if ((graph = malloc(sizeof(t_graph))) == NULL)
+	if ((graph = malloc(sizeof(t_graph))) == NULL || size < 1)
 		return (NULL);
 	graph->size = size;
 	if ((graph->data = malloc(sizeof(void *) * size)) == NULL)
@@ -24,25 +38,24 @@
 		free(graph);
 		return (NULL);
 	}
-	memset(graph->data, NULL, size);
 	if ((graph->matrix = malloc(sizeof(bool *) * size)) == NULL)
 	{
-		free(graph);
 		free(graph->data);
+		free(graph);
 		return (NULL);
 	}
 	for (int i = 0; i < size; i++)
 	{
-		if ((grpah->matrix[i] = malloc(sizeof(bool) * size)) == NULL)
+		if ((graph->matrix[i] = malloc(sizeof(bool) * size)) == NULL)
 		{
-			for (int j == 0; j < i; j++)
+			for (int j = 0; j < i; j++)
 				free(graph->matrix[j]);
-			free(graph);
 			free(graph->data);
-			free(matrix);
+			free(graph->matrix);
+			free(graph);
 			return (NULL);
 		}
-		memset(matrix[i], false, size);
 	}
+	init_data_and_matrix(graph, size);
 	return (graph);
 }

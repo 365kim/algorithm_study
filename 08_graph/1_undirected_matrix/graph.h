@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/13 10:47:16 by mihykim           #+#    #+#             */
-/*   Updated: 2020/06/13 11:34:37 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/04 00:54:54 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
-typedef sturct s_graph
+typedef struct s_graph
 {
 	unsigned int size;
 	void         **data;
@@ -33,3 +34,4 @@ typedef sturct s_graph
  void graph_traverse(t_graph *graph, void (*print_data)(void *));
  t_graph	*make_graph(void);
 
+#endif
