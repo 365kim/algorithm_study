@@ -14,9 +14,10 @@
 - [예제 원본](https://github.com/nadarm/42-algorithm/tree/master/graph/undirected_matrix)
 - 구현
     - [graph_init](./graph_init.c) : 구조체 메모리할당 및 초기화
-    - [grpah_set_data](./grpah_set_data.c) : 그래프에 vertex에 data 저장
-    - [graph_set_edge](./graph_set_edge.c) : 그래프의 vertex 끼리 연결하여 edge 연결상태 변경
-    - [graph_get_edge](./graph_get_edge.c) : 그래프의 vertex 끼리 연결되어있는지 확인하기 위해 edge 연결상태 반환
+    - [grpah_set_data](./grpah_set_data.c) : 매개변수로 주어지는 vertex에 data 저장
+    - [grpah_set_data](./grpah_get_data.c) : 매개변수로 주어지는 vertex에 담긴 data 반환
+    - [graph_set_edge](./graph_set_edge.c) : vertex 끼리 연결하여 edge 연결상태 변경
+    - [graph_get_edge](./graph_get_edge.c) : vertex 끼리 연결되어있는지 확인하기 위해 edge 연결상태 반환
     - [free_graph](./free_graph.c) : 그래프의 요소 전체 삭제 및 구조체 메모리 해제
     - [graph_traverse](./graph_traverse.c) : 재귀함수를 이용해 DFS를 구현하여 그래프를 순회하며 data 출력
     - [make_graph](./make_graph.c) : 예제원본 그림에서 제시하는 그래프 생성
