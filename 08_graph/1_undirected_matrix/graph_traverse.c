@@ -22,7 +22,7 @@ void do_traverse(t_graph *graph, bool *visited,
 	visited[i] = true;
 	printf("%d번 vertex, data =", i);
 	print_data(graph->data[i]);
-	for (j = i + 1; j < graph->size; j++)
+	for (j = 0; j < graph->size; j++)
 	{
 		if (graph->matrix[i][j]) // check if 'i' has a child
 			do_traverse(graph, visited, j, print_data);
