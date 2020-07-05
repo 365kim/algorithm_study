@@ -24,7 +24,7 @@
 <br>
 
 ## 생각해보기
-- :speech_balloon: ***순환/비순환 그래프(cyclic/acyclic graph)란?***
+- :speech_balloon: ***순환/비순환 그래프란?***
     
     |　　　　　　 순환 그래프 (Cyclic Graph)　　　　　　　|　　　　　　비순환 그래프 (Acylic Graph)　　　　　　|
     |:---:|:---:|
@@ -33,7 +33,7 @@
     
 <br><br>
 
-- :speech_balloon: ***그래프(graph)와 트리(tree)의 비교***
+- :speech_balloon: ***그래프와 트리의 비교***
     - __트리__ 는 __그래프__ 의 특수한 형태: _유방향 비순환 그래프 (DAG, Directed Acyclic Graph)_
     <br>
     
