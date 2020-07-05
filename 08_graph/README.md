@@ -1,6 +1,7 @@
 ## 8. Graph
 - 연결되어 있는 객체 간의 관계를 표현하는 비선형적 자료구조
-- `정점(vertex)` 과 `간선(edge)`으로 표현
+- `정점(vertex)` : 여러가지 특성을 가질 수 있는 객체
+- `간선(edge)` : 정점들간의 관계 의미
 <br>
 
 ### [8.1.](./1_undirected_matrix) **Undirected Graph(adjacency matrix)**
@@ -44,13 +45,25 @@
     | 순환 or 비순환 | 비순환 |
     | 루트/부모/자식노드 개념X | 루트/부모/자식노드 개념O <br> _(자식노드는 단 하나의 부모노드를 가짐)_ |
     | 간선 개수 제한 X | 간선 개수는 항상 정점 수 - 1 |
+    | <p><img src="https://user-images.githubusercontent.com/60066472/86526047-f668f900-bec9-11ea-982d-9cffe20965ef.png" width="300"></p> | <p><img src="https://user-images.githubusercontent.com/60066472/86526907-a7749100-bed4-11ea-9d24-1f612874cdc0.png" width="270"></p> |
     
 <br><br>
 
-- :speech_balloon: ***인접행렬(adjacency matrix)와 인접리스트(adjacency list) 비교***
-    - 비교쓰
-<br>
+- :speech_balloon: ***그래프 표현방법 비교***
+    - 그래프를 활용하여 수행하려는 연산의 종류에 따라 표현방법 결정
+    <br>
+    
+    |구분|　　　　인접 행렬 (Adjacency Matrix)　　　　|　　　　　인접 리스트 (Adjacency List)　　　　　|
+    |:---:|:---:|:---:|
+    | __정의__ | 정점 간의 연결여부를 이차원 배열로 나타냄 | 각 정점을 오름차순으로 배열에 담고<br>해당 정점에 연결된 정점을 리스트로 나열함 |
+    | __전체탐색__ |  O(V²) | O(E) |
+    | __(i,j)탐색__ |  O(1) | O(V) |
+    | | <p><img src="https://user-images.githubusercontent.com/60066472/86527204-b741a480-bed7-11ea-9658-f5ca1f156fac.png" width="300"></p> | <p><img src="https://user-images.githubusercontent.com/60066472/86527241-0e477980-bed8-11ea-94e2-b43953501271.png" width="250"></p> |
+<br><br>
 
+- :speech_balloon: ***그래프의 순회방법 비교***
+    - 깊이우선탐색(DFS) 너비우선탐색(BFS)
+<br>
         
 - :speech_balloon: ***MST 알고리즘의 성능 비교 (어떤 상황에서 어떤 알고리즘이 좋을까?)***
     - kuskal vs prim
