@@ -1,9 +1,11 @@
 ## Undirected Graph (Adjacency List)
 - __무방향그래프 (인접 리스트)__
-    - 정점 _(vertex)_ 과 향이 없는 간선 _(undirected edge)_ 으로 표현된 무방향그래프에서, 정점 간의 연결 여부를 리스트 _(list)_ 로 표현한 것
+    - 정점과 향이 없는 간선으로 표현된 무방향그래프에서, 정점 간의 연결 여부를 리스트로 표현한 것
+    - 보통 편의상 vertex 배열은 오름차 순으로 나열
+    - 각 vertex에 연결된 노드의 순서에는 의미가 없음. 예를들어 (0) - 1 - 3 이거나 (0) - 3 - 1 이거나 상관없음. <p><img src="https://user-images.githubusercontent.com/60066472/86527291-8a41c180-bed8-11ea-830c-49857d7a18ce.png" width="400"></p>
     
-    - __참고자료__
-      - 추가
+- __참고자료__
+    - [그래프 - 인접행렬과 인접리스트](https://sarah950716.tistory.com/12)
 <br>
 
 ## Nadarm's Exercise
