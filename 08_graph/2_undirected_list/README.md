@@ -20,5 +20,3 @@
     - [graph_traverse](./graph_traverse.c) : 재귀함수를 이용해 DFS를 구현하여 그래프를 순회하며 data 출력
     - [header](./graph.h)
 <br>
-
-[맨 위로](#undirected-graph-(adjacency-list))
