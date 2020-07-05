@@ -1,7 +1,7 @@
 ## Undirected Graph (Adjacency Matrix)
 - __무방향그래프 (인접 행렬)__
     - 정점과 향이 없는 간선으로 표현된 무방향그래프에서, 정점 간의 연결 여부를 행렬 _(matrix)_ 로 표현한 것
-    - 무방향 그래프에서는 연결된 정점(vertex)들은 양방향 관계를 갖게되어 인접행렬은 대각선(\\)을 기준으로 대칭을 이룸<p><img src="https://user-images.githubusercontent.com/60066472/86527204-b741a480-bed7-11ea-9658-f5ca1f156fac.png" width="400"></p>
+    - 무방향 그래프에서는 연결된 정점(vertex)들은 양방향 관계를 갖게되어 인접행렬은 대각선(\\)을 기준으로 대칭을 이룸<p><img src="https://user-images.githubusercontent.com/60066472/86536273-3909f000-bf21-11ea-955c-5f0d533d90bf.png" width="400"></p>
 - __참고자료__
     - [그래프 - 인접행렬과 인접리스트](https://sarah950716.tistory.com/12)
     - [MOOC강의 - 그래프1 _(1.5배속)_ ](http://www.kocw.net/home/search/kemView.do?kemId=1161730)
