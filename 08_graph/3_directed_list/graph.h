@@ -6,12 +6,17 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 14:15:52 by mihykim           #+#    #+#             */
-/*   Updated: 2020/07/07 17:46:04 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/08 00:54:23 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GRAPH_H
 # define GRAPH_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
 
 typedef struct	s_node
 {
