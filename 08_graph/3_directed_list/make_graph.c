@@ -6,13 +6,13 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 00:47:10 by mihykim           #+#    #+#             */
-/*   Updated: 2020/07/08 00:57:13 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/08 18:25:49 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "graph.h"
 
-void	set_vertex(t_graph *graph, unsigned int size, unsigned int len)
+static bool	set_vertex(t_graph *graph, unsigned int size, unsigned int len)
 {
 	char data[size][len + 1];
 	int i;
@@ -35,7 +35,7 @@ void	set_vertex(t_graph *graph, unsigned int size, unsigned int len)
 	return (true);
 }
 
-void set_edge(t_graph *graph)
+static bool set_edge(t_graph *graph)
 {
 	if (!graph_set_edge(graph, 0, 0, true)
 			|| !graph_set_edge(graph, 0, 1, true)
@@ -65,5 +65,5 @@ t_graph *make_graph(void)
 		free_graph(graph, free);
 		return (NULL);
 	}
-	return (grpah);
+	return (graph);
 }

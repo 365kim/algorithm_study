@@ -6,7 +6,7 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 17:46:10 by mihykim           #+#    #+#             */
-/*   Updated: 2020/07/07 17:52:03 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/08 20:01:22 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ t_graph *graph_init(unsigned int size)
 	t_graph	*graph;
 	int		i;
 
+	printf("here");
 	if (size < 1 || (graph  = malloc(sizeof(t_graph))) == NULL)
 		return (NULL);
 	graph->size = size;

@@ -6,9 +6,11 @@
 /*   By: mihykim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 17:57:04 by mihykim           #+#    #+#             */
-/*   Updated: 2020/07/07 17:58:20 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/08 17:09:47 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "graph.h"
 
 bool graph_set_data(t_graph *graph, unsigned int vertex, void *data)
 {

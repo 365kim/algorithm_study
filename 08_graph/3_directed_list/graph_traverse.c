@@ -6,7 +6,7 @@
 /*   By: mihykim <mihykim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 00:35:31 by mihykim           #+#    #+#             */
-/*   Updated: 2020/07/08 00:46:38 by mihykim          ###   ########.fr       */
+/*   Updated: 2020/07/08 19:17:52 by mihykim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ static void queue_push(unsigned int *queue, int *last, unsigned int v, bool *vis
 {
 	(*last)++;
 	visited[v] = true;
-	queue[last] = v;
+	queue[*last] = v;
 }
 
-static void queue_pop(unsigned int *queue, int *last, void (*print_data)(void *), t_graph *graph)
+static int queue_pop(unsigned int *queue, int *last, void (*print_data)(void *), t_graph *graph)
 {
 	unsigned int	v;
 	int				i;
@@ -27,12 +27,15 @@ static void queue_pop(unsigned int *queue, int *last, void (*print_data)(void *)
 	v = queue[0];
 	printf("%u번 vertex, data=", v);
 	print_data(graph->data[v]);
+	printf("here2\n");
 	i = 0;
-	while (i < last - 1)
+	printf("here3\n");
+	while (i + 1 < *last)
 	{
 		queue[i] = queue[i + 1];
 		i++;
 	}
+	printf("here\n");
 	(*last)--;
 	return (v);
 }
@@ -45,18 +48,20 @@ void graph_traverse(t_graph *graph, void (*print_data)(void *))
 	int				last = -1;
 	t_node			*curr;
 
-	if (grpah == NULL || print_data == NULL
-			|| (visited = malloc(sizeof(bool) * graph->size) == NULL))
+	if (graph == NULL || graph->list == NULL || print_data == NULL
+			|| (visited = malloc(sizeof(bool) * graph->size)) == NULL)
 		return ;
 	if ((queue = malloc(sizeof(int) * graph->size)) == NULL)
 	{
 		free(visited);
 		return ;
 	}
+	memset(queue, 0, graph->size);
 	queue_push(queue, &last, 0, visited);
 	while (last > -1)
 	{
 		v = queue_pop(queue, &last, print_data, graph);
+	printf("here a\n");
 		curr = graph->list[v];
 		while (curr)
 		{
@@ -65,6 +70,7 @@ void graph_traverse(t_graph *graph, void (*print_data)(void *))
 			curr = curr->next;
 		}
 	}
+	printf("here b\n");
 	free(visited);
 	free(queue);
 }
