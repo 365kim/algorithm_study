@@ -29,4 +29,3 @@
     - [make_mst_prim](./make_mst_prim.c)
     - [make_mst_kruskal](./make_mst_kruskal.c)
     - [header](./graph.h)
-<br>
