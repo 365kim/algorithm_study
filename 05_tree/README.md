@@ -37,7 +37,7 @@
 - **깊이우선탐색** _(DFT, Depth First Search)_
     - 전위 순회 _(pre_order traversal)_ : Visit - Left - Right 순서
     - 중위 순회 _(in_order traversal)_ : Left - Visit -Right 순서
-    - 후위 순회 _(post_order traversal)_ : Left - Vist - Right 순서
+    - 후위 순회 _(post_order traversal)_ : Left - Right - Vist 순서
 - **너비우선탐색** _(BFS, Breadth First Search)_
     - 레벨 순회 _(level_order traversal)_ : Root - ... - Leaf 순서
     
